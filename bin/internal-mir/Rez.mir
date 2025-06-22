@@ -1,0 +1,1622 @@
+[ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [WatchUi,2,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [WatchUi,3,13,20]; @symbol_usingAlias = [Ui,3,24,26]; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Graphics,4,13,21]; ]
+using Toybox.Graphics;
+[ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Graphics,5,13,21]; @symbol_usingAlias = [Gfx,5,25,28]; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 7; @symbol_moduledef = [Rez,7,7,10]; ]
+module Rez {
+    [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 8; @symbol_moduledef = [Drawables,8,11,20]; ]
+    module Drawables {
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 9; @position = 27; initialized = true; @symbol_vardef = [LauncherIcon,9,27,39]; @symbol_type<0> = [ResourceId,9,43,53]; ]
+        var LauncherIcon as ResourceId;
+    }
+    [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 12; @symbol_moduledef = [Layouts,12,11,18]; ]
+    module Layouts {
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 12; ]
+        <init> {
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 13; @symbol_functiondef = [WatchFace,13,17,26]; @symbol_param<0> = [dc,13,27,29]; @symbol_param<0>_type<0> = [Graphics,13,33,41]; @symbol_param<0>_type<1> = [Dc,13,42,44]; @symbol_return<0> = [Array,13,49,54]; @symbol_return<1> = [WatchUi,13,55,62]; @symbol_return<2> = [Drawable,13,63,71]; ]
+        function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+_Users_christophehumbert_Code_sdkGarminFour_PlanetariumWatch_bin_gen_006_B4234_00_source_Rez_mcgen_13_73_17_8_start:
+[ "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen" 14 12 ]
+            [ "_Users_christophehumbert_Code_sdkGarminFour_PlanetariumWatch_bin_gen_006_B4234_00_source_Rez_mcgen_13_73_17_8_start" "_Users_christophehumbert_Code_sdkGarminFour_PlanetariumWatch_bin_gen_006_B4234_00_source_Rez_mcgen_13_73_17_8_stop" ]
+            %rez_cmp_local_text_TimeLabel.1 = local;
+            symbol [ rez_cmp_local_text_TimeLabel %rez_cmp_local_text_TimeLabel.1 14 16 44 ];
+            symbol [ WatchUi %tmp.3 14 51 58 ];
+            %tmp.3 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.4 14 59 63 ];
+            %tmp.4 = getv function ? %tmp.3 :Text;
+            %tmp.5 = newd 6;
+            %tmp.7 = const :identifier;
+            symbol [ identifier %tmp.7 14 66 76 const ];
+            %tmp.8 = "TimeLabel";
+            %tmp.9 = dup %tmp.5;
+            %tmp.10 = aputv %tmp.9 %tmp.7 %tmp.8;
+            %tmp.12 = const :color;
+            symbol [ color %tmp.12 14 92 97 const ];
+            symbol [ Graphics %tmp.13 14 99 107 ];
+            %tmp.13 = getm $.Toybox.Graphics;
+            symbol [ COLOR_BLUE %tmp.14 14 108 118 ];
+            %tmp.14 = getv %tmp.13 :COLOR_BLUE;
+            %tmp.15 = dup %tmp.10;
+            %tmp.16 = aputv %tmp.15 %tmp.12 %tmp.14;
+            %tmp.18 = const :locX;
+            symbol [ locX %tmp.18 14 121 125 const ];
+            %tmp.19 = 454;
+            %tmp.20 = 0.5;
+            %tmp.21 = mul %tmp.19 %tmp.20;
+            %tmp.22 = dup %tmp.16;
+            %tmp.23 = aputv %tmp.22 %tmp.18 %tmp.21;
+            %tmp.25 = const :locY;
+            symbol [ locY %tmp.25 14 141 145 const ];
+            %tmp.26 = 454;
+            %tmp.27 = lgetv %dc;
+            symbol [ dc %tmp.27 14 155 157 ];
+            symbol [ getFontHeight %tmp.28 14 158 171 ];
+            %tmp.28 = getv function %tmp.27 :getFontHeight;
+            symbol [ Graphics %tmp.29 14 172 180 ];
+            %tmp.29 = getm $.Toybox.Graphics;
+            symbol [ FONT_LARGE %tmp.30 14 181 191 ];
+            %tmp.30 = getv %tmp.29 :FONT_LARGE;
+            %tmp.31 = invoke %tmp.27 %tmp.28(%tmp.30);
+            %tmp.32 = sub %tmp.26 %tmp.31;
+            %tmp.33 = 0.5;
+            %tmp.34 = mul %tmp.32 %tmp.33;
+            %tmp.35 = dup %tmp.23;
+            %tmp.36 = aputv %tmp.35 %tmp.25 %tmp.34;
+            %tmp.38 = const :justification;
+            symbol [ justification %tmp.38 14 203 216 const ];
+            symbol [ Graphics %tmp.39 14 218 226 ];
+            %tmp.39 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_CENTER %tmp.40 14 227 246 ];
+            %tmp.40 = getv %tmp.39 :TEXT_JUSTIFY_CENTER;
+            %tmp.41 = dup %tmp.36;
+            %tmp.42 = aputv %tmp.41 %tmp.38 %tmp.40;
+            %tmp.44 = const :font;
+            symbol [ font %tmp.44 14 249 253 const ];
+            symbol [ Graphics %tmp.45 14 255 263 ];
+            %tmp.45 = getm $.Toybox.Graphics;
+            symbol [ FONT_LARGE %tmp.46 14 264 274 ];
+            %tmp.46 = getv %tmp.45 :FONT_LARGE;
+            %tmp.47 = dup %tmp.42;
+            %tmp.48 = aputv %tmp.47 %tmp.44 %tmp.46;
+            %tmp.1 = newc %tmp.4 (%tmp.48);
+            lputv %rez_cmp_local_text_TimeLabel.1 %tmp.1;
+            symbol [ rez_cmp_local_text_TimeLabel %rez_cmp_local_text_TimeLabel.1 14 16 44 ];
+[ "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen" 16 12 ]
+            %tmp.49 = newa 1 Array<WatchUi.Drawable>;
+            symbol [ Array %tmp.49 16 53 58 ];
+            symbol [ WatchUi %tmp.49 16 59 66 ];
+            symbol [ Drawable %tmp.49 16 67 75 ];
+            %tmp.50 = lgetv %rez_cmp_local_text_TimeLabel.1;
+            symbol [ rez_cmp_local_text_TimeLabel %tmp.50 16 20 48 ];
+            %tmp.51 = dup %tmp.49;
+            %tmp.52 = aputv %tmp.51 0 %tmp.50;
+            ret %tmp.52;
+_Users_christophehumbert_Code_sdkGarminFour_PlanetariumWatch_bin_gen_006_B4234_00_source_Rez_mcgen_13_73_17_8_stop:
+        }
+    }
+    [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 20; @symbol_moduledef = [Strings,20,11,18]; ]
+    module Strings {
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 20; ]
+        <init> {
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 21; @position = 27; initialized = true; @symbol_vardef = [AppName,21,27,34]; @symbol_type<0> = [ResourceId,21,38,48]; ]
+        var AppName as ResourceId;
+    }
+    [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 24; @symbol_moduledef = [Styles,24,11,17]; ]
+    module Styles {
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 24; ]
+        <init> {
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 25; @symbol_moduledef = [prompt_font_enhanced_readability__body_with_title,25,15,64]; ]
+        module prompt_font_enhanced_readability__body_with_title {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 25; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 26; @position = 18; @symbol_constdef = [exclude,26,18,25]; @symbol_type<0> = [Boolean,26,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 29; @symbol_moduledef = [system_size__menu_header,29,15,39]; ]
+        module system_size__menu_header {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 29; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 30; @position = 18; @symbol_constdef = [width,30,18,23]; @symbol_type<0> = [Number,30,27,33]; ]
+            const width as Number = 454;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 31; @position = 18; @symbol_constdef = [height,31,18,24]; @symbol_type<0> = [Number,31,28,34]; ]
+            const height as Number = 159;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 34; @symbol_moduledef = [system_loc__hint_button_left_bottom,34,15,50]; ]
+        module system_loc__hint_button_left_bottom {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 34; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 35; @position = 18; @symbol_constdef = [exclude,35,18,25]; @symbol_type<0> = [Boolean,35,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 38; @symbol_moduledef = [prompt_font_enhanced_readability__body_no_title,38,15,62]; ]
+        module prompt_font_enhanced_readability__body_no_title {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 38; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 39; @position = 18; @symbol_constdef = [exclude,39,18,25]; @symbol_type<0> = [Boolean,39,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 42; @symbol_moduledef = [prompt_loc__body_no_title,42,15,40]; ]
+        module prompt_loc__body_no_title {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 42; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 43; @position = 18; @symbol_constdef = [x,43,18,19]; @symbol_type<0> = [Number,43,23,29]; ]
+            const x as Number = 34;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 44; @position = 18; @symbol_constdef = [y,44,18,19]; @symbol_type<0> = [Number,44,23,29]; ]
+            const y as Number = 111;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 47; @symbol_moduledef = [system_icon_dark__about,47,15,38]; ]
+        module system_icon_dark__about {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 47; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 48; @position = 18; @symbol_constdef = [filename,48,18,26]; @symbol_type<0> = [String,48,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_dark__about.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 49; @position = 18; @symbol_constdef = [compress,49,18,26]; @symbol_type<0> = [String,49,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 50; @position = 18; @symbol_constdef = [dithering,50,18,27]; @symbol_type<0> = [String,50,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 51; @position = 18; @symbol_constdef = [automaticPalette,51,18,34]; @symbol_type<0> = [String,51,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 52; @position = 18; @symbol_constdef = [packingFormat,52,18,31]; @symbol_type<0> = [String,52,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 55; @symbol_moduledef = [system_icon_light__question,55,15,42]; ]
+        module system_icon_light__question {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 55; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 56; @position = 18; @symbol_constdef = [filename,56,18,26]; @symbol_type<0> = [String,56,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_light__question.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 57; @position = 18; @symbol_constdef = [compress,57,18,26]; @symbol_type<0> = [String,57,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 58; @position = 18; @symbol_constdef = [dithering,58,18,27]; @symbol_type<0> = [String,58,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 59; @position = 18; @symbol_constdef = [automaticPalette,59,18,34]; @symbol_type<0> = [String,59,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 60; @position = 18; @symbol_constdef = [packingFormat,60,18,31]; @symbol_type<0> = [String,60,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 63; @symbol_moduledef = [system_loc__hint_button_left_top,63,15,47]; ]
+        module system_loc__hint_button_left_top {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 63; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 64; @position = 18; @symbol_constdef = [exclude,64,18,25]; @symbol_type<0> = [Boolean,64,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 67; @symbol_moduledef = [prompt_font__title,67,15,33]; ]
+        module prompt_font__title {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 67; ]
+            <init> {
+[ "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen" 68 18 ]
+                symbol [ Graphics %tmp.53 68 34 42 ];
+                %tmp.53 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.54 68 43 62 ];
+                %tmp.54 = getv %tmp.53 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.55 68 63 71 ];
+                %tmp.55 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.56 68 72 92 ];
+                %tmp.56 = getv %tmp.55 :TEXT_JUSTIFY_VCENTER;
+                %tmp.57 = bitor %tmp.54 %tmp.56;
+                putv self :justification %tmp.57;
+[ "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen" 69 18 ]
+                symbol [ Graphics %tmp.58 69 25 33 ];
+                %tmp.58 = getm $.Toybox.Graphics;
+                symbol [ FONT_XTINY %tmp.59 69 34 44 ];
+                %tmp.59 = getv %tmp.58 :FONT_XTINY;
+                putv self :font %tmp.59;
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 68; @position = 18; @symbol_constdef = [justification,68,18,31]; ]
+            const justification;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 69; @position = 18; @symbol_constdef = [font,69,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 72; @symbol_moduledef = [system_icon_dark__discard,72,15,40]; ]
+        module system_icon_dark__discard {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 72; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 73; @position = 18; @symbol_constdef = [filename,73,18,26]; @symbol_type<0> = [String,73,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_dark__discard.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 74; @position = 18; @symbol_constdef = [compress,74,18,26]; @symbol_type<0> = [String,74,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 75; @position = 18; @symbol_constdef = [dithering,75,18,27]; @symbol_type<0> = [String,75,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 76; @position = 18; @symbol_constdef = [automaticPalette,76,18,34]; @symbol_type<0> = [String,76,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 77; @position = 18; @symbol_constdef = [packingFormat,77,18,31]; @symbol_type<0> = [String,77,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 80; @symbol_moduledef = [system_size__menu_item,80,15,37]; ]
+        module system_size__menu_item {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 80; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 81; @position = 18; @symbol_constdef = [width,81,18,23]; @symbol_type<0> = [Number,81,27,33]; ]
+            const width as Number = 454;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 82; @position = 18; @symbol_constdef = [height,82,18,24]; @symbol_type<0> = [Number,82,28,34]; ]
+            const height as Number = 126;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 85; @symbol_moduledef = [system_color_dark__text,85,15,38]; ]
+        module system_color_dark__text {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 85; ]
+            <init> {
+[ "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen" 87 18 ]
+                symbol [ Graphics %tmp.60 87 31 39 ];
+                %tmp.60 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.61 87 40 57 ];
+                %tmp.61 = getv %tmp.60 :COLOR_TRANSPARENT;
+                putv self :background %tmp.61;
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 86; @position = 18; @symbol_constdef = [color,86,18,23]; @symbol_type<0> = [Number,86,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 87; @position = 18; @symbol_constdef = [background,87,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 90; @symbol_moduledef = [system_icon_destructive__discard,90,15,47]; ]
+        module system_icon_destructive__discard {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 90; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 91; @position = 18; @symbol_constdef = [filename,91,18,26]; @symbol_type<0> = [String,91,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_destructive__discard.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 92; @position = 18; @symbol_constdef = [dithering,92,18,27]; @symbol_type<0> = [String,92,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 93; @position = 18; @symbol_constdef = [packingFormat,93,18,31]; @symbol_type<0> = [String,93,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 96; @symbol_moduledef = [system_icon_dark__hint_action_menu,96,15,49]; ]
+        module system_icon_dark__hint_action_menu {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 96; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 97; @position = 18; @symbol_constdef = [filename,97,18,26]; @symbol_type<0> = [String,97,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_dark__hint_action_menu.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 98; @position = 18; @symbol_constdef = [dithering,98,18,27]; @symbol_type<0> = [String,98,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 99; @position = 18; @symbol_constdef = [packingFormat,99,18,31]; @symbol_type<0> = [String,99,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 102; @symbol_moduledef = [prompt_size__title,102,15,33]; ]
+        module prompt_size__title {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 102; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 103; @position = 18; @symbol_constdef = [width,103,18,23]; @symbol_type<0> = [Number,103,27,33]; ]
+            const width as Number = 352;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 104; @position = 18; @symbol_constdef = [height,104,18,24]; @symbol_type<0> = [Number,104,28,34]; ]
+            const height as Number = 81;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 107; @symbol_moduledef = [confirmation_font__body,107,15,38]; ]
+        module confirmation_font__body {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 107; ]
+            <init> {
+[ "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen" 108 18 ]
+                symbol [ Graphics %tmp.62 108 34 42 ];
+                %tmp.62 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.63 108 43 62 ];
+                %tmp.63 = getv %tmp.62 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.64 108 63 71 ];
+                %tmp.64 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.65 108 72 92 ];
+                %tmp.65 = getv %tmp.64 :TEXT_JUSTIFY_VCENTER;
+                %tmp.66 = bitor %tmp.63 %tmp.65;
+                putv self :justification %tmp.66;
+[ "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen" 109 18 ]
+                symbol [ Graphics %tmp.67 109 25 33 ];
+                %tmp.67 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.68 109 34 43 ];
+                %tmp.68 = getv %tmp.67 :FONT_TINY;
+                putv self :font %tmp.68;
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 108; @position = 18; @symbol_constdef = [justification,108,18,31]; ]
+            const justification;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 109; @position = 18; @symbol_constdef = [font,109,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 112; @symbol_moduledef = [system_color_dark__background,112,15,44]; ]
+        module system_color_dark__background {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 112; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 113; @position = 18; @symbol_constdef = [color,113,18,23]; @symbol_type<0> = [Number,113,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 114; @position = 18; @symbol_constdef = [background,114,18,28]; @symbol_type<0> = [Number,114,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 117; @symbol_moduledef = [system_icon_destructive__hint_button_left_top,117,15,60]; ]
+        module system_icon_destructive__hint_button_left_top {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 117; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 118; @position = 18; @symbol_constdef = [exclude,118,18,25]; @symbol_type<0> = [Boolean,118,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 121; @symbol_moduledef = [system_size__launch_icon,121,15,39]; ]
+        module system_size__launch_icon {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 121; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 122; @position = 18; @symbol_constdef = [scaleX,122,18,24]; @symbol_type<0> = [Number,122,28,34]; ]
+            const scaleX as Number = 70;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 123; @position = 18; @symbol_constdef = [scaleY,123,18,24]; @symbol_type<0> = [Number,123,28,34]; ]
+            const scaleY as Number = 70;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 124; @position = 18; @symbol_constdef = [scaleRelativeTo,124,18,33]; @symbol_type<0> = [String,124,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 127; @symbol_moduledef = [confirmation_input__confirm,127,15,42]; ]
+        module confirmation_input__confirm {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 127; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 128; @position = 18; @symbol_constdef = [y1,128,18,20]; @symbol_type<0> = [Number,128,24,30]; ]
+            const y1 as Number = 362;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 129; @position = 18; @symbol_constdef = [x1,129,18,20]; @symbol_type<0> = [Number,129,24,30]; ]
+            const x1 as Number = 88;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 130; @position = 18; @symbol_constdef = [y2,130,18,20]; @symbol_type<0> = [Number,130,24,30]; ]
+            const y2 as Number = 454;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 131; @position = 18; @symbol_constdef = [x2,131,18,20]; @symbol_type<0> = [Number,131,24,30]; ]
+            const x2 as Number = 366;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 134; @symbol_moduledef = [prompt_font__body_with_title,134,15,43]; ]
+        module prompt_font__body_with_title {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 134; ]
+            <init> {
+[ "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen" 135 18 ]
+                symbol [ Graphics %tmp.69 135 34 42 ];
+                %tmp.69 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.70 135 43 62 ];
+                %tmp.70 = getv %tmp.69 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.70;
+[ "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen" 136 18 ]
+                symbol [ Graphics %tmp.71 136 25 33 ];
+                %tmp.71 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.72 136 34 43 ];
+                %tmp.72 = getv %tmp.71 :FONT_TINY;
+                putv self :font %tmp.72;
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 135; @position = 18; @symbol_constdef = [justification,135,18,31]; ]
+            const justification;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 136; @position = 18; @symbol_constdef = [font,136,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 139; @symbol_moduledef = [confirmation_loc__body,139,15,37]; ]
+        module confirmation_loc__body {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 139; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 140; @position = 18; @symbol_constdef = [x,140,18,19]; @symbol_type<0> = [Number,140,23,29]; ]
+            const x as Number = 34;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 141; @position = 18; @symbol_constdef = [y,141,18,19]; @symbol_type<0> = [Number,141,23,29]; ]
+            const y as Number = 82;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 144; @symbol_moduledef = [system_icon_destructive__hint_button_left_bottom,144,15,63]; ]
+        module system_icon_destructive__hint_button_left_bottom {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 144; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 145; @position = 18; @symbol_constdef = [exclude,145,18,25]; @symbol_type<0> = [Boolean,145,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 148; @symbol_moduledef = [prompt_color_dark__background,148,15,44]; ]
+        module prompt_color_dark__background {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 148; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 149; @position = 18; @symbol_constdef = [color,149,18,23]; @symbol_type<0> = [Number,149,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 150; @position = 18; @symbol_constdef = [background,150,18,28]; @symbol_type<0> = [Number,150,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 153; @symbol_moduledef = [system_icon_destructive__hint_action_menu,153,15,56]; ]
+        module system_icon_destructive__hint_action_menu {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 153; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 154; @position = 18; @symbol_constdef = [filename,154,18,26]; @symbol_type<0> = [String,154,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_destructive__hint_action_menu.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 155; @position = 18; @symbol_constdef = [dithering,155,18,27]; @symbol_type<0> = [String,155,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 156; @position = 18; @symbol_constdef = [packingFormat,156,18,31]; @symbol_type<0> = [String,156,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 159; @symbol_moduledef = [system_loc__hint_action_menu,159,15,43]; ]
+        module system_loc__hint_action_menu {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 159; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 160; @position = 18; @symbol_constdef = [x,160,18,19]; @symbol_type<0> = [Number,160,23,29]; ]
+            const x as Number = 393;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 161; @position = 18; @symbol_constdef = [y,161,18,19]; @symbol_type<0> = [Number,161,23,29]; ]
+            const y as Number = 86;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 164; @symbol_moduledef = [confirmation_icon__hint_confirm,164,15,46]; ]
+        module confirmation_icon__hint_confirm {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 164; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 165; @position = 18; @symbol_constdef = [filename,165,18,26]; @symbol_type<0> = [String,165,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/confirmation_icon__hint_completion.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 166; @position = 18; @symbol_constdef = [dithering,166,18,27]; @symbol_type<0> = [String,166,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 167; @position = 18; @symbol_constdef = [packingFormat,167,18,31]; @symbol_type<0> = [String,167,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 170; @symbol_moduledef = [system_loc__hint_button_left_middle,170,15,50]; ]
+        module system_loc__hint_button_left_middle {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 170; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 171; @position = 18; @symbol_constdef = [exclude,171,18,25]; @symbol_type<0> = [Boolean,171,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 174; @symbol_moduledef = [prompt_size__body_no_title,174,15,41]; ]
+        module prompt_size__body_no_title {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 174; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 175; @position = 18; @symbol_constdef = [width,175,18,23]; @symbol_type<0> = [Number,175,27,33]; ]
+            const width as Number = 386;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 176; @position = 18; @symbol_constdef = [height,176,18,24]; @symbol_type<0> = [Number,176,28,34]; ]
+            const height as Number = 246;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 179; @symbol_moduledef = [system_icon_light__hint_button_left_top,179,15,54]; ]
+        module system_icon_light__hint_button_left_top {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 179; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 180; @position = 18; @symbol_constdef = [exclude,180,18,25]; @symbol_type<0> = [Boolean,180,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 183; @symbol_moduledef = [prompt_color_light__background,183,15,45]; ]
+        module prompt_color_light__background {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 183; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 184; @position = 18; @symbol_constdef = [color,184,18,23]; @symbol_type<0> = [Number,184,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 185; @position = 18; @symbol_constdef = [background,185,18,28]; @symbol_type<0> = [Number,185,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 188; @symbol_moduledef = [confirmation_input__delete,188,15,41]; ]
+        module confirmation_input__delete {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 188; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 189; @position = 18; @symbol_constdef = [y1,189,18,20]; @symbol_type<0> = [Number,189,24,30]; ]
+            const y1 as Number = 0;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 190; @position = 18; @symbol_constdef = [x1,190,18,20]; @symbol_type<0> = [Number,190,24,30]; ]
+            const x1 as Number = 88;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 191; @position = 18; @symbol_constdef = [y2,191,18,20]; @symbol_type<0> = [Number,191,24,30]; ]
+            const y2 as Number = 97;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 192; @position = 18; @symbol_constdef = [x2,192,18,20]; @symbol_type<0> = [Number,192,24,30]; ]
+            const x2 as Number = 366;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 195; @symbol_moduledef = [system_icon_dark__hint_button_left_top,195,15,53]; ]
+        module system_icon_dark__hint_button_left_top {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 195; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 196; @position = 18; @symbol_constdef = [exclude,196,18,25]; @symbol_type<0> = [Boolean,196,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 199; @symbol_moduledef = [system_input__action_menu,199,15,40]; ]
+        module system_input__action_menu {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 199; ]
+            <init> {
+[ "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen" 200 18 ]
+                symbol [ WatchUi %tmp.73 200 27 34 ];
+                %tmp.73 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.74 200 35 44 ];
+                %tmp.74 = getv %tmp.73 :KEY_ENTER;
+                putv self :button %tmp.74;
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 200; @position = 18; @symbol_constdef = [button,200,18,24]; ]
+            const button;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 203; @symbol_moduledef = [system_icon_light__save,203,15,38]; ]
+        module system_icon_light__save {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 203; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 204; @position = 18; @symbol_constdef = [filename,204,18,26]; @symbol_type<0> = [String,204,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_light__save.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 205; @position = 18; @symbol_constdef = [compress,205,18,26]; @symbol_type<0> = [String,205,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 206; @position = 18; @symbol_constdef = [dithering,206,18,27]; @symbol_type<0> = [String,206,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 207; @position = 18; @symbol_constdef = [automaticPalette,207,18,34]; @symbol_type<0> = [String,207,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 208; @position = 18; @symbol_constdef = [packingFormat,208,18,31]; @symbol_type<0> = [String,208,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 211; @symbol_moduledef = [prompt_color_light__body,211,15,39]; ]
+        module prompt_color_light__body {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 211; ]
+            <init> {
+[ "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen" 213 18 ]
+                symbol [ Graphics %tmp.75 213 31 39 ];
+                %tmp.75 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.76 213 40 57 ];
+                %tmp.76 = getv %tmp.75 :COLOR_TRANSPARENT;
+                putv self :background %tmp.76;
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 212; @position = 18; @symbol_constdef = [color,212,18,23]; @symbol_type<0> = [Number,212,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 213; @position = 18; @symbol_constdef = [background,213,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 216; @symbol_moduledef = [system_loc__subwindow,216,15,36]; ]
+        module system_loc__subwindow {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 216; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 217; @position = 18; @symbol_constdef = [exclude,217,18,25]; @symbol_type<0> = [Boolean,217,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 220; @symbol_moduledef = [system_icon_light__warning,220,15,41]; ]
+        module system_icon_light__warning {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 220; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 221; @position = 18; @symbol_constdef = [filename,221,18,26]; @symbol_type<0> = [String,221,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_light__warning.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 222; @position = 18; @symbol_constdef = [compress,222,18,26]; @symbol_type<0> = [String,222,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 223; @position = 18; @symbol_constdef = [dithering,223,18,27]; @symbol_type<0> = [String,223,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 224; @position = 18; @symbol_constdef = [automaticPalette,224,18,34]; @symbol_type<0> = [String,224,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 225; @position = 18; @symbol_constdef = [packingFormat,225,18,31]; @symbol_type<0> = [String,225,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 228; @symbol_moduledef = [confirmation_color_light__body,228,15,45]; ]
+        module confirmation_color_light__body {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 228; ]
+            <init> {
+[ "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen" 230 18 ]
+                symbol [ Graphics %tmp.77 230 31 39 ];
+                %tmp.77 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.78 230 40 57 ];
+                %tmp.78 = getv %tmp.77 :COLOR_TRANSPARENT;
+                putv self :background %tmp.78;
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 229; @position = 18; @symbol_constdef = [color,229,18,23]; @symbol_type<0> = [Number,229,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 230; @position = 18; @symbol_constdef = [background,230,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 233; @symbol_moduledef = [confirmation_icon_light__hint_keep,233,15,49]; ]
+        module confirmation_icon_light__hint_keep {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 233; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 234; @position = 18; @symbol_constdef = [filename,234,18,26]; @symbol_type<0> = [String,234,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/confirmation_icon__hint_keep.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 235; @position = 18; @symbol_constdef = [dithering,235,18,27]; @symbol_type<0> = [String,235,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 236; @position = 18; @symbol_constdef = [packingFormat,236,18,31]; @symbol_type<0> = [String,236,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 239; @symbol_moduledef = [activity_color_light__background,239,15,47]; ]
+        module activity_color_light__background {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 239; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 240; @position = 18; @symbol_constdef = [color,240,18,23]; @symbol_type<0> = [Number,240,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 241; @position = 18; @symbol_constdef = [background,241,18,28]; @symbol_type<0> = [Number,241,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 244; @symbol_moduledef = [system_icon_positive__hint_button_right_top,244,15,58]; ]
+        module system_icon_positive__hint_button_right_top {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 244; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 245; @position = 18; @symbol_constdef = [filename,245,18,26]; @symbol_type<0> = [String,245,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_positive__hint_button_right_top.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 246; @position = 18; @symbol_constdef = [dithering,246,18,27]; @symbol_type<0> = [String,246,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 249; @symbol_moduledef = [system_size__screen,249,15,34]; ]
+        module system_size__screen {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 249; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 250; @position = 18; @symbol_constdef = [width,250,18,23]; @symbol_type<0> = [Number,250,27,33]; ]
+            const width as Number = 454;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 251; @position = 18; @symbol_constdef = [height,251,18,24]; @symbol_type<0> = [Number,251,28,34]; ]
+            const height as Number = 454;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 254; @symbol_moduledef = [system_icon_destructive__hint_button_right_bottom,254,15,64]; ]
+        module system_icon_destructive__hint_button_right_bottom {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 254; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 255; @position = 18; @symbol_constdef = [filename,255,18,26]; @symbol_type<0> = [String,255,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_destructive__hint_button_right_bottom.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 256; @position = 18; @symbol_constdef = [dithering,256,18,27]; @symbol_type<0> = [String,256,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 259; @symbol_moduledef = [system_color_light__background,259,15,45]; ]
+        module system_color_light__background {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 259; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 260; @position = 18; @symbol_constdef = [color,260,18,23]; @symbol_type<0> = [Number,260,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 261; @position = 18; @symbol_constdef = [background,261,18,28]; @symbol_type<0> = [Number,261,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 264; @symbol_moduledef = [system_icon_destructive__hint_button_right_top,264,15,61]; ]
+        module system_icon_destructive__hint_button_right_top {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 264; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 265; @position = 18; @symbol_constdef = [filename,265,18,26]; @symbol_type<0> = [String,265,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 266; @position = 18; @symbol_constdef = [dithering,266,18,27]; @symbol_type<0> = [String,266,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 269; @symbol_moduledef = [confirmation_loc__hint_confirm,269,15,45]; ]
+        module confirmation_loc__hint_confirm {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 269; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 270; @position = 18; @symbol_constdef = [x,270,18,19]; @symbol_type<0> = [Number,270,23,29]; ]
+            const x as Number = 227;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 271; @position = 18; @symbol_constdef = [horizontalJustification,271,18,41]; @symbol_type<0> = [String,271,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 272; @position = 18; @symbol_constdef = [y,272,18,19]; @symbol_type<0> = [Number,272,23,29]; ]
+            const y as Number = 362;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 275; @symbol_moduledef = [activity_color_dark__text,275,15,40]; ]
+        module activity_color_dark__text {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 275; ]
+            <init> {
+[ "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen" 277 18 ]
+                symbol [ Graphics %tmp.79 277 31 39 ];
+                %tmp.79 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.80 277 40 57 ];
+                %tmp.80 = getv %tmp.79 :COLOR_TRANSPARENT;
+                putv self :background %tmp.80;
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 276; @position = 18; @symbol_constdef = [color,276,18,23]; @symbol_type<0> = [Number,276,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 277; @position = 18; @symbol_constdef = [background,277,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 280; @symbol_moduledef = [confirmation_input__keep,280,15,39]; ]
+        module confirmation_input__keep {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 280; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 281; @position = 18; @symbol_constdef = [y1,281,18,20]; @symbol_type<0> = [Number,281,24,30]; ]
+            const y1 as Number = 361;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 282; @position = 18; @symbol_constdef = [x1,282,18,20]; @symbol_type<0> = [Number,282,24,30]; ]
+            const x1 as Number = 106;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 283; @position = 18; @symbol_constdef = [y2,283,18,20]; @symbol_type<0> = [Number,283,24,30]; ]
+            const y2 as Number = 454;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 284; @position = 18; @symbol_constdef = [x2,284,18,20]; @symbol_type<0> = [Number,284,24,30]; ]
+            const x2 as Number = 348;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 287; @symbol_moduledef = [prompt_loc__body_with_title,287,15,42]; ]
+        module prompt_loc__body_with_title {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 287; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 288; @position = 18; @symbol_constdef = [x,288,18,19]; @symbol_type<0> = [Number,288,23,29]; ]
+            const x as Number = 34;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 289; @position = 18; @symbol_constdef = [y,289,18,19]; @symbol_type<0> = [Number,289,23,29]; ]
+            const y as Number = 162;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 292; @symbol_moduledef = [system_icon_dark__search,292,15,39]; ]
+        module system_icon_dark__search {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 292; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 293; @position = 18; @symbol_constdef = [filename,293,18,26]; @symbol_type<0> = [String,293,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_dark__search.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 294; @position = 18; @symbol_constdef = [compress,294,18,26]; @symbol_type<0> = [String,294,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 295; @position = 18; @symbol_constdef = [dithering,295,18,27]; @symbol_type<0> = [String,295,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 296; @position = 18; @symbol_constdef = [automaticPalette,296,18,34]; @symbol_type<0> = [String,296,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 297; @position = 18; @symbol_constdef = [packingFormat,297,18,31]; @symbol_type<0> = [String,297,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 300; @symbol_moduledef = [activity_color_light__text,300,15,41]; ]
+        module activity_color_light__text {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 300; ]
+            <init> {
+[ "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen" 302 18 ]
+                symbol [ Graphics %tmp.81 302 31 39 ];
+                %tmp.81 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.82 302 40 57 ];
+                %tmp.82 = getv %tmp.81 :COLOR_TRANSPARENT;
+                putv self :background %tmp.82;
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 301; @position = 18; @symbol_constdef = [color,301,18,23]; @symbol_type<0> = [Number,301,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 302; @position = 18; @symbol_constdef = [background,302,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 305; @symbol_moduledef = [confirmation_icon__hint_keep,305,15,43]; ]
+        module confirmation_icon__hint_keep {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 305; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 306; @position = 18; @symbol_constdef = [filename,306,18,26]; @symbol_type<0> = [String,306,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/confirmation_icon__hint_keep.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 307; @position = 18; @symbol_constdef = [dithering,307,18,27]; @symbol_type<0> = [String,307,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 308; @position = 18; @symbol_constdef = [packingFormat,308,18,31]; @symbol_type<0> = [String,308,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 311; @symbol_moduledef = [system_icon_dark__save,311,15,37]; ]
+        module system_icon_dark__save {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 311; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 312; @position = 18; @symbol_constdef = [filename,312,18,26]; @symbol_type<0> = [String,312,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_dark__save.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 313; @position = 18; @symbol_constdef = [compress,313,18,26]; @symbol_type<0> = [String,313,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 314; @position = 18; @symbol_constdef = [dithering,314,18,27]; @symbol_type<0> = [String,314,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 315; @position = 18; @symbol_constdef = [automaticPalette,315,18,34]; @symbol_type<0> = [String,315,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 316; @position = 18; @symbol_constdef = [packingFormat,316,18,31]; @symbol_type<0> = [String,316,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 319; @symbol_moduledef = [system_icon_destructive__hint_button_left_middle,319,15,63]; ]
+        module system_icon_destructive__hint_button_left_middle {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 319; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 320; @position = 18; @symbol_constdef = [exclude,320,18,25]; @symbol_type<0> = [Boolean,320,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 323; @symbol_moduledef = [system_icon_light__search,323,15,40]; ]
+        module system_icon_light__search {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 323; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 324; @position = 18; @symbol_constdef = [filename,324,18,26]; @symbol_type<0> = [String,324,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_light__search.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 325; @position = 18; @symbol_constdef = [compress,325,18,26]; @symbol_type<0> = [String,325,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 326; @position = 18; @symbol_constdef = [dithering,326,18,27]; @symbol_type<0> = [String,326,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 327; @position = 18; @symbol_constdef = [automaticPalette,327,18,34]; @symbol_type<0> = [String,327,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 328; @position = 18; @symbol_constdef = [packingFormat,328,18,31]; @symbol_type<0> = [String,328,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 331; @symbol_moduledef = [system_icon_dark__hint_button_left_bottom,331,15,56]; ]
+        module system_icon_dark__hint_button_left_bottom {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 331; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 332; @position = 18; @symbol_constdef = [exclude,332,18,25]; @symbol_type<0> = [Boolean,332,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 335; @symbol_moduledef = [system_icon_positive__hint_button_left_top,335,15,57]; ]
+        module system_icon_positive__hint_button_left_top {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 335; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 336; @position = 18; @symbol_constdef = [exclude,336,18,25]; @symbol_type<0> = [Boolean,336,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 339; @symbol_moduledef = [system_loc__hint_button_right_bottom,339,15,51]; ]
+        module system_loc__hint_button_right_bottom {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 339; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 340; @position = 18; @symbol_constdef = [x,340,18,19]; @symbol_type<0> = [Number,340,23,29]; ]
+            const x as Number = 392;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 341; @position = 18; @symbol_constdef = [y,341,18,19]; @symbol_type<0> = [Number,341,23,29]; ]
+            const y as Number = 302;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 344; @symbol_moduledef = [confirmation_icon_dark__hint_reject,344,15,50]; ]
+        module confirmation_icon_dark__hint_reject {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 344; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 345; @position = 18; @symbol_constdef = [filename,345,18,26]; @symbol_type<0> = [String,345,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/confirmation_icon__hint_reject.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 346; @position = 18; @symbol_constdef = [dithering,346,18,27]; @symbol_type<0> = [String,346,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 347; @position = 18; @symbol_constdef = [packingFormat,347,18,31]; @symbol_type<0> = [String,347,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 350; @symbol_moduledef = [confirmation_color_dark__body,350,15,44]; ]
+        module confirmation_color_dark__body {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 350; ]
+            <init> {
+[ "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen" 352 18 ]
+                symbol [ Graphics %tmp.83 352 31 39 ];
+                %tmp.83 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.84 352 40 57 ];
+                %tmp.84 = getv %tmp.83 :COLOR_TRANSPARENT;
+                putv self :background %tmp.84;
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 351; @position = 18; @symbol_constdef = [color,351,18,23]; @symbol_type<0> = [Number,351,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 352; @position = 18; @symbol_constdef = [background,352,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 355; @symbol_moduledef = [confirmation_icon_light__hint_confirm,355,15,52]; ]
+        module confirmation_icon_light__hint_confirm {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 355; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 356; @position = 18; @symbol_constdef = [filename,356,18,26]; @symbol_type<0> = [String,356,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/confirmation_icon__hint_completion.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 357; @position = 18; @symbol_constdef = [dithering,357,18,27]; @symbol_type<0> = [String,357,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 358; @position = 18; @symbol_constdef = [packingFormat,358,18,31]; @symbol_type<0> = [String,358,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 361; @symbol_moduledef = [prompt_color_dark__title,361,15,39]; ]
+        module prompt_color_dark__title {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 361; ]
+            <init> {
+[ "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen" 363 18 ]
+                symbol [ Graphics %tmp.85 363 31 39 ];
+                %tmp.85 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.86 363 40 57 ];
+                %tmp.86 = getv %tmp.85 :COLOR_TRANSPARENT;
+                putv self :background %tmp.86;
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 362; @position = 18; @symbol_constdef = [color,362,18,23]; @symbol_type<0> = [Number,362,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 363; @position = 18; @symbol_constdef = [background,363,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 366; @symbol_moduledef = [system_icon_destructive__cancel,366,15,46]; ]
+        module system_icon_destructive__cancel {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 366; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 367; @position = 18; @symbol_constdef = [filename,367,18,26]; @symbol_type<0> = [String,367,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_destructive__cancel.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 368; @position = 18; @symbol_constdef = [dithering,368,18,27]; @symbol_type<0> = [String,368,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 369; @position = 18; @symbol_constdef = [packingFormat,369,18,31]; @symbol_type<0> = [String,369,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 372; @symbol_moduledef = [system_icon_light__hint_button_right_bottom,372,15,58]; ]
+        module system_icon_light__hint_button_right_bottom {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 372; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 373; @position = 18; @symbol_constdef = [filename,373,18,26]; @symbol_type<0> = [String,373,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_light__hint_button_right_bottom.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 374; @position = 18; @symbol_constdef = [dithering,374,18,27]; @symbol_type<0> = [String,374,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 377; @symbol_moduledef = [prompt_loc__title,377,15,32]; ]
+        module prompt_loc__title {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 377; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 378; @position = 18; @symbol_constdef = [x,378,18,19]; @symbol_type<0> = [Number,378,23,29]; ]
+            const x as Number = 51;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 379; @position = 18; @symbol_constdef = [y,379,18,19]; @symbol_type<0> = [Number,379,23,29]; ]
+            const y as Number = 91;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 382; @symbol_moduledef = [confirmation_font_enhanced_readability__body,382,15,59]; ]
+        module confirmation_font_enhanced_readability__body {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 382; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 383; @position = 18; @symbol_constdef = [exclude,383,18,25]; @symbol_type<0> = [Boolean,383,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 386; @symbol_moduledef = [prompt_color_light__title,386,15,40]; ]
+        module prompt_color_light__title {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 386; ]
+            <init> {
+[ "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen" 388 18 ]
+                symbol [ Graphics %tmp.87 388 31 39 ];
+                %tmp.87 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.88 388 40 57 ];
+                %tmp.88 = getv %tmp.87 :COLOR_TRANSPARENT;
+                putv self :background %tmp.88;
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 387; @position = 18; @symbol_constdef = [color,387,18,23]; @symbol_type<0> = [Number,387,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 388; @position = 18; @symbol_constdef = [background,388,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 391; @symbol_moduledef = [system_icon_dark__hint_button_right_top,391,15,54]; ]
+        module system_icon_dark__hint_button_right_top {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 391; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 392; @position = 18; @symbol_constdef = [filename,392,18,26]; @symbol_type<0> = [String,392,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_dark__hint_button_right_top.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 393; @position = 18; @symbol_constdef = [dithering,393,18,27]; @symbol_type<0> = [String,393,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 396; @symbol_moduledef = [system_icon_dark__hint_button_left_middle,396,15,56]; ]
+        module system_icon_dark__hint_button_left_middle {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 396; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 397; @position = 18; @symbol_constdef = [exclude,397,18,25]; @symbol_type<0> = [Boolean,397,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 400; @symbol_moduledef = [confirmation_icon_dark__hint_keep,400,15,48]; ]
+        module confirmation_icon_dark__hint_keep {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 400; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 401; @position = 18; @symbol_constdef = [filename,401,18,26]; @symbol_type<0> = [String,401,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/confirmation_icon__hint_keep.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 402; @position = 18; @symbol_constdef = [dithering,402,18,27]; @symbol_type<0> = [String,402,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 403; @position = 18; @symbol_constdef = [packingFormat,403,18,31]; @symbol_type<0> = [String,403,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 406; @symbol_moduledef = [system_icon_light__cancel,406,15,40]; ]
+        module system_icon_light__cancel {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 406; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 407; @position = 18; @symbol_constdef = [filename,407,18,26]; @symbol_type<0> = [String,407,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_light__cancel.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 408; @position = 18; @symbol_constdef = [compress,408,18,26]; @symbol_type<0> = [String,408,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 409; @position = 18; @symbol_constdef = [dithering,409,18,27]; @symbol_type<0> = [String,409,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 410; @position = 18; @symbol_constdef = [automaticPalette,410,18,34]; @symbol_type<0> = [String,410,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 411; @position = 18; @symbol_constdef = [packingFormat,411,18,31]; @symbol_type<0> = [String,411,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 414; @symbol_moduledef = [confirmation_icon_light__hint_reject,414,15,51]; ]
+        module confirmation_icon_light__hint_reject {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 414; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 415; @position = 18; @symbol_constdef = [filename,415,18,26]; @symbol_type<0> = [String,415,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/confirmation_icon__hint_reject.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 416; @position = 18; @symbol_constdef = [dithering,416,18,27]; @symbol_type<0> = [String,416,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 417; @position = 18; @symbol_constdef = [packingFormat,417,18,31]; @symbol_type<0> = [String,417,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 420; @symbol_moduledef = [system_icon_light__about,420,15,39]; ]
+        module system_icon_light__about {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 420; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 421; @position = 18; @symbol_constdef = [filename,421,18,26]; @symbol_type<0> = [String,421,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_light__about.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 422; @position = 18; @symbol_constdef = [compress,422,18,26]; @symbol_type<0> = [String,422,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 423; @position = 18; @symbol_constdef = [dithering,423,18,27]; @symbol_type<0> = [String,423,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 424; @position = 18; @symbol_constdef = [automaticPalette,424,18,34]; @symbol_type<0> = [String,424,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 425; @position = 18; @symbol_constdef = [packingFormat,425,18,31]; @symbol_type<0> = [String,425,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 428; @symbol_moduledef = [system_size__toast_icon,428,15,38]; ]
+        module system_size__toast_icon {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 428; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 429; @position = 18; @symbol_constdef = [scaleX,429,18,24]; @symbol_type<0> = [Number,429,28,34]; ]
+            const scaleX as Number = 40;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 430; @position = 18; @symbol_constdef = [scaleY,430,18,24]; @symbol_type<0> = [Number,430,28,34]; ]
+            const scaleY as Number = 40;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 431; @position = 18; @symbol_constdef = [scaleRelativeTo,431,18,33]; @symbol_type<0> = [String,431,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 434; @symbol_moduledef = [system_icon_dark__hint_button_right_middle,434,15,57]; ]
+        module system_icon_dark__hint_button_right_middle {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 434; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 435; @position = 18; @symbol_constdef = [filename,435,18,26]; @symbol_type<0> = [String,435,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_dark__hint_button_right_middle.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 436; @position = 18; @symbol_constdef = [dithering,436,18,27]; @symbol_type<0> = [String,436,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 439; @symbol_moduledef = [confirmation_icon__hint_reject,439,15,45]; ]
+        module confirmation_icon__hint_reject {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 439; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 440; @position = 18; @symbol_constdef = [filename,440,18,26]; @symbol_type<0> = [String,440,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/confirmation_icon__hint_reject.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 441; @position = 18; @symbol_constdef = [dithering,441,18,27]; @symbol_type<0> = [String,441,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 442; @position = 18; @symbol_constdef = [packingFormat,442,18,31]; @symbol_type<0> = [String,442,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 445; @symbol_moduledef = [system_icon_light__hint_action_menu,445,15,50]; ]
+        module system_icon_light__hint_action_menu {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 445; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 446; @position = 18; @symbol_constdef = [filename,446,18,26]; @symbol_type<0> = [String,446,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_light__hint_action_menu.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 447; @position = 18; @symbol_constdef = [dithering,447,18,27]; @symbol_type<0> = [String,447,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 448; @position = 18; @symbol_constdef = [packingFormat,448,18,31]; @symbol_type<0> = [String,448,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 451; @symbol_moduledef = [system_icon_light__hint_button_right_middle,451,15,58]; ]
+        module system_icon_light__hint_button_right_middle {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 451; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 452; @position = 18; @symbol_constdef = [filename,452,18,26]; @symbol_type<0> = [String,452,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_light__hint_button_right_middle.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 453; @position = 18; @symbol_constdef = [dithering,453,18,27]; @symbol_type<0> = [String,453,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 456; @symbol_moduledef = [system_icon_destructive__hint_button_right_middle,456,15,64]; ]
+        module system_icon_destructive__hint_button_right_middle {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 456; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 457; @position = 18; @symbol_constdef = [filename,457,18,26]; @symbol_type<0> = [String,457,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_destructive__hint_button_right_middle.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 458; @position = 18; @symbol_constdef = [dithering,458,18,27]; @symbol_type<0> = [String,458,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 461; @symbol_moduledef = [confirmation_loc__hint_reject,461,15,44]; ]
+        module confirmation_loc__hint_reject {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 461; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 462; @position = 18; @symbol_constdef = [x,462,18,19]; @symbol_type<0> = [Number,462,23,29]; ]
+            const x as Number = 227;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 463; @position = 18; @symbol_constdef = [horizontalJustification,463,18,41]; @symbol_type<0> = [String,463,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 464; @position = 18; @symbol_constdef = [y,464,18,19]; @symbol_type<0> = [Number,464,23,29]; ]
+            const y as Number = 0;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 467; @symbol_moduledef = [confirmation_icon_dark__hint_delete,467,15,50]; ]
+        module confirmation_icon_dark__hint_delete {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 467; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 468; @position = 18; @symbol_constdef = [filename,468,18,26]; @symbol_type<0> = [String,468,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/confirmation_icon__hint_delete.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 469; @position = 18; @symbol_constdef = [dithering,469,18,27]; @symbol_type<0> = [String,469,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 470; @position = 18; @symbol_constdef = [packingFormat,470,18,31]; @symbol_type<0> = [String,470,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 473; @symbol_moduledef = [activity_color_dark__background,473,15,46]; ]
+        module activity_color_dark__background {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 473; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 474; @position = 18; @symbol_constdef = [color,474,18,23]; @symbol_type<0> = [Number,474,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 475; @position = 18; @symbol_constdef = [background,475,18,28]; @symbol_type<0> = [Number,475,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 478; @symbol_moduledef = [system_icon_light__hint_button_left_bottom,478,15,57]; ]
+        module system_icon_light__hint_button_left_bottom {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 478; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 479; @position = 18; @symbol_constdef = [exclude,479,18,25]; @symbol_type<0> = [Boolean,479,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 482; @symbol_moduledef = [system_icon_positive__hint_button_left_middle,482,15,60]; ]
+        module system_icon_positive__hint_button_left_middle {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 482; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 483; @position = 18; @symbol_constdef = [exclude,483,18,25]; @symbol_type<0> = [Boolean,483,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 486; @symbol_moduledef = [system_size__menu_icon,486,15,37]; ]
+        module system_size__menu_icon {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 486; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 487; @position = 18; @symbol_constdef = [scaleX,487,18,24]; @symbol_type<0> = [Number,487,28,34]; ]
+            const scaleX as Number = 48;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 488; @position = 18; @symbol_constdef = [scaleY,488,18,24]; @symbol_type<0> = [Number,488,28,34]; ]
+            const scaleY as Number = 48;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 489; @position = 18; @symbol_constdef = [scaleRelativeTo,489,18,33]; @symbol_type<0> = [String,489,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 492; @symbol_moduledef = [system_icon_destructive__warning,492,15,47]; ]
+        module system_icon_destructive__warning {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 492; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 493; @position = 18; @symbol_constdef = [filename,493,18,26]; @symbol_type<0> = [String,493,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_destructive__warning.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 494; @position = 18; @symbol_constdef = [dithering,494,18,27]; @symbol_type<0> = [String,494,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 495; @position = 18; @symbol_constdef = [packingFormat,495,18,31]; @symbol_type<0> = [String,495,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 498; @symbol_moduledef = [system_loc__hint_button_right_middle,498,15,51]; ]
+        module system_loc__hint_button_right_middle {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 498; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 499; @position = 18; @symbol_constdef = [x,499,18,19]; @symbol_type<0> = [Number,499,23,29]; ]
+            const x as Number = 438;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 500; @position = 18; @symbol_constdef = [y,500,18,19]; @symbol_type<0> = [Number,500,23,29]; ]
+            const y as Number = 188;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 503; @symbol_moduledef = [system_icon_dark__cancel,503,15,39]; ]
+        module system_icon_dark__cancel {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 503; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 504; @position = 18; @symbol_constdef = [filename,504,18,26]; @symbol_type<0> = [String,504,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_dark__cancel.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 505; @position = 18; @symbol_constdef = [compress,505,18,26]; @symbol_type<0> = [String,505,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 506; @position = 18; @symbol_constdef = [dithering,506,18,27]; @symbol_type<0> = [String,506,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 507; @position = 18; @symbol_constdef = [automaticPalette,507,18,34]; @symbol_type<0> = [String,507,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 508; @position = 18; @symbol_constdef = [packingFormat,508,18,31]; @symbol_type<0> = [String,508,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 511; @symbol_moduledef = [prompt_size__body_with_title,511,15,43]; ]
+        module prompt_size__body_with_title {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 511; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 512; @position = 18; @symbol_constdef = [width,512,18,23]; @symbol_type<0> = [Number,512,27,33]; ]
+            const width as Number = 386;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 513; @position = 18; @symbol_constdef = [height,513,18,24]; @symbol_type<0> = [Number,513,28,34]; ]
+            const height as Number = 194;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 516; @symbol_moduledef = [system_loc__hint_button_right_top,516,15,48]; ]
+        module system_loc__hint_button_right_top {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 516; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 517; @position = 18; @symbol_constdef = [x,517,18,19]; @symbol_type<0> = [Number,517,23,29]; ]
+            const x as Number = 393;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 518; @position = 18; @symbol_constdef = [y,518,18,19]; @symbol_type<0> = [Number,518,23,29]; ]
+            const y as Number = 85;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 521; @symbol_moduledef = [system_color_light__text,521,15,39]; ]
+        module system_color_light__text {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 521; ]
+            <init> {
+[ "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen" 523 18 ]
+                symbol [ Graphics %tmp.89 523 31 39 ];
+                %tmp.89 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.90 523 40 57 ];
+                %tmp.90 = getv %tmp.89 :COLOR_TRANSPARENT;
+                putv self :background %tmp.90;
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 522; @position = 18; @symbol_constdef = [color,522,18,23]; @symbol_type<0> = [Number,522,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 523; @position = 18; @symbol_constdef = [background,523,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 526; @symbol_moduledef = [system_icon_light__check,526,15,39]; ]
+        module system_icon_light__check {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 526; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 527; @position = 18; @symbol_constdef = [filename,527,18,26]; @symbol_type<0> = [String,527,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_light__check.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 528; @position = 18; @symbol_constdef = [compress,528,18,26]; @symbol_type<0> = [String,528,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 529; @position = 18; @symbol_constdef = [dithering,529,18,27]; @symbol_type<0> = [String,529,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 530; @position = 18; @symbol_constdef = [automaticPalette,530,18,34]; @symbol_type<0> = [String,530,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 531; @position = 18; @symbol_constdef = [packingFormat,531,18,31]; @symbol_type<0> = [String,531,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 534; @symbol_moduledef = [confirmation_input__reject,534,15,41]; ]
+        module confirmation_input__reject {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 534; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 535; @position = 18; @symbol_constdef = [y1,535,18,20]; @symbol_type<0> = [Number,535,24,30]; ]
+            const y1 as Number = 0;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 536; @position = 18; @symbol_constdef = [x1,536,18,20]; @symbol_type<0> = [Number,536,24,30]; ]
+            const x1 as Number = 88;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 537; @position = 18; @symbol_constdef = [y2,537,18,20]; @symbol_type<0> = [Number,537,24,30]; ]
+            const y2 as Number = 97;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 538; @position = 18; @symbol_constdef = [x2,538,18,20]; @symbol_type<0> = [Number,538,24,30]; ]
+            const x2 as Number = 366;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 541; @symbol_moduledef = [system_icon_light__revert,541,15,40]; ]
+        module system_icon_light__revert {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 541; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 542; @position = 18; @symbol_constdef = [filename,542,18,26]; @symbol_type<0> = [String,542,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_light__revert.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 543; @position = 18; @symbol_constdef = [compress,543,18,26]; @symbol_type<0> = [String,543,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 544; @position = 18; @symbol_constdef = [dithering,544,18,27]; @symbol_type<0> = [String,544,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 545; @position = 18; @symbol_constdef = [automaticPalette,545,18,34]; @symbol_type<0> = [String,545,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 546; @position = 18; @symbol_constdef = [packingFormat,546,18,31]; @symbol_type<0> = [String,546,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 549; @symbol_moduledef = [system_size__subwindow,549,15,37]; ]
+        module system_size__subwindow {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 549; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 550; @position = 18; @symbol_constdef = [exclude,550,18,25]; @symbol_type<0> = [Boolean,550,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 553; @symbol_moduledef = [system_icon_positive__hint_button_left_bottom,553,15,60]; ]
+        module system_icon_positive__hint_button_left_bottom {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 553; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 554; @position = 18; @symbol_constdef = [exclude,554,18,25]; @symbol_type<0> = [Boolean,554,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 557; @symbol_moduledef = [system_icon_dark__check,557,15,38]; ]
+        module system_icon_dark__check {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 557; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 558; @position = 18; @symbol_constdef = [filename,558,18,26]; @symbol_type<0> = [String,558,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_dark__check.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 559; @position = 18; @symbol_constdef = [compress,559,18,26]; @symbol_type<0> = [String,559,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 560; @position = 18; @symbol_constdef = [dithering,560,18,27]; @symbol_type<0> = [String,560,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 561; @position = 18; @symbol_constdef = [automaticPalette,561,18,34]; @symbol_type<0> = [String,561,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 562; @position = 18; @symbol_constdef = [packingFormat,562,18,31]; @symbol_type<0> = [String,562,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 565; @symbol_moduledef = [confirmation_loc__hint_keep,565,15,42]; ]
+        module confirmation_loc__hint_keep {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 565; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 566; @position = 18; @symbol_constdef = [x,566,18,19]; @symbol_type<0> = [Number,566,23,29]; ]
+            const x as Number = 227;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 567; @position = 18; @symbol_constdef = [horizontalJustification,567,18,41]; @symbol_type<0> = [String,567,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 568; @position = 18; @symbol_constdef = [y,568,18,19]; @symbol_type<0> = [Number,568,23,29]; ]
+            const y as Number = 361;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 571; @symbol_moduledef = [confirmation_loc__hint_delete,571,15,44]; ]
+        module confirmation_loc__hint_delete {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 571; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 572; @position = 18; @symbol_constdef = [x,572,18,19]; @symbol_type<0> = [Number,572,23,29]; ]
+            const x as Number = 227;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 573; @position = 18; @symbol_constdef = [horizontalJustification,573,18,41]; @symbol_type<0> = [String,573,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 574; @position = 18; @symbol_constdef = [y,574,18,19]; @symbol_type<0> = [Number,574,23,29]; ]
+            const y as Number = 0;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 577; @symbol_moduledef = [system_icon_positive__hint_action_menu,577,15,53]; ]
+        module system_icon_positive__hint_action_menu {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 577; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 578; @position = 18; @symbol_constdef = [filename,578,18,26]; @symbol_type<0> = [String,578,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_positive__hint_action_menu.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 579; @position = 18; @symbol_constdef = [dithering,579,18,27]; @symbol_type<0> = [String,579,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 580; @position = 18; @symbol_constdef = [packingFormat,580,18,31]; @symbol_type<0> = [String,580,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 583; @symbol_moduledef = [system_icon_positive__hint_button_right_middle,583,15,61]; ]
+        module system_icon_positive__hint_button_right_middle {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 583; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 584; @position = 18; @symbol_constdef = [filename,584,18,26]; @symbol_type<0> = [String,584,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_positive__hint_button_right_middle.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 585; @position = 18; @symbol_constdef = [dithering,585,18,27]; @symbol_type<0> = [String,585,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 588; @symbol_moduledef = [system_icon_light__hint_button_left_middle,588,15,57]; ]
+        module system_icon_light__hint_button_left_middle {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 588; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 589; @position = 18; @symbol_constdef = [exclude,589,18,25]; @symbol_type<0> = [Boolean,589,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 592; @symbol_moduledef = [system_icon_dark__hint_button_right_bottom,592,15,57]; ]
+        module system_icon_dark__hint_button_right_bottom {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 592; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 593; @position = 18; @symbol_constdef = [filename,593,18,26]; @symbol_type<0> = [String,593,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_dark__hint_button_right_bottom.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 594; @position = 18; @symbol_constdef = [dithering,594,18,27]; @symbol_type<0> = [String,594,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 597; @symbol_moduledef = [system_icon_positive__hint_button_right_bottom,597,15,61]; ]
+        module system_icon_positive__hint_button_right_bottom {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 597; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 598; @position = 18; @symbol_constdef = [filename,598,18,26]; @symbol_type<0> = [String,598,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_positive__hint_button_right_bottom.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 599; @position = 18; @symbol_constdef = [dithering,599,18,27]; @symbol_type<0> = [String,599,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 602; @symbol_moduledef = [system_icon_dark__revert,602,15,39]; ]
+        module system_icon_dark__revert {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 602; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 603; @position = 18; @symbol_constdef = [filename,603,18,26]; @symbol_type<0> = [String,603,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_dark__revert.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 604; @position = 18; @symbol_constdef = [compress,604,18,26]; @symbol_type<0> = [String,604,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 605; @position = 18; @symbol_constdef = [dithering,605,18,27]; @symbol_type<0> = [String,605,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 606; @position = 18; @symbol_constdef = [automaticPalette,606,18,34]; @symbol_type<0> = [String,606,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 607; @position = 18; @symbol_constdef = [packingFormat,607,18,31]; @symbol_type<0> = [String,607,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 610; @symbol_moduledef = [confirmation_icon_light__hint_delete,610,15,51]; ]
+        module confirmation_icon_light__hint_delete {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 610; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 611; @position = 18; @symbol_constdef = [filename,611,18,26]; @symbol_type<0> = [String,611,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/confirmation_icon__hint_delete.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 612; @position = 18; @symbol_constdef = [dithering,612,18,27]; @symbol_type<0> = [String,612,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 613; @position = 18; @symbol_constdef = [packingFormat,613,18,31]; @symbol_type<0> = [String,613,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 616; @symbol_moduledef = [system_icon_dark__question,616,15,41]; ]
+        module system_icon_dark__question {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 616; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 617; @position = 18; @symbol_constdef = [filename,617,18,26]; @symbol_type<0> = [String,617,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_dark__question.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 618; @position = 18; @symbol_constdef = [compress,618,18,26]; @symbol_type<0> = [String,618,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 619; @position = 18; @symbol_constdef = [dithering,619,18,27]; @symbol_type<0> = [String,619,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 620; @position = 18; @symbol_constdef = [automaticPalette,620,18,34]; @symbol_type<0> = [String,620,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 621; @position = 18; @symbol_constdef = [packingFormat,621,18,31]; @symbol_type<0> = [String,621,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 624; @symbol_moduledef = [system_icon_light__discard,624,15,41]; ]
+        module system_icon_light__discard {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 624; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 625; @position = 18; @symbol_constdef = [filename,625,18,26]; @symbol_type<0> = [String,625,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_light__discard.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 626; @position = 18; @symbol_constdef = [compress,626,18,26]; @symbol_type<0> = [String,626,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 627; @position = 18; @symbol_constdef = [dithering,627,18,27]; @symbol_type<0> = [String,627,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 628; @position = 18; @symbol_constdef = [automaticPalette,628,18,34]; @symbol_type<0> = [String,628,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 629; @position = 18; @symbol_constdef = [packingFormat,629,18,31]; @symbol_type<0> = [String,629,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 632; @symbol_moduledef = [device_info,632,15,26]; ]
+        module device_info {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 632; ]
+            <init> {
+[ "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen" 634 18 ]
+                symbol [ Toybox %tmp.92 634 32 38 ];
+                %tmp.92 = getv ? :Toybox;
+                symbol [ System %tmp.93 634 39 45 ];
+                %tmp.93 = getv %tmp.92 :System;
+                symbol [ SCREEN_SHAPE_ROUND %tmp.94 634 46 64 ];
+                %tmp.94 = getv %tmp.93 :SCREEN_SHAPE_ROUND;
+                putv self :screenShape %tmp.94;
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 633; @position = 18; @symbol_constdef = [screenWidth,633,18,29]; @symbol_type<0> = [Number,633,33,39]; ]
+            const screenWidth as Number = 454;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 634; @position = 18; @symbol_constdef = [screenShape,634,18,29]; ]
+            const screenShape;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 635; @position = 18; @symbol_constdef = [hasNightMode,635,18,30]; @symbol_type<0> = [Boolean,635,34,41]; ]
+            const hasNightMode as Boolean = false;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 636; @position = 18; @symbol_constdef = [hasGpu,636,18,24]; @symbol_type<0> = [Boolean,636,28,35]; ]
+            const hasGpu as Boolean = true;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 637; @position = 18; @symbol_constdef = [screenHeight,637,18,30]; @symbol_type<0> = [Number,637,34,40]; ]
+            const screenHeight as Number = 454;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 638; @position = 18; @symbol_constdef = [hasTouchScreen,638,18,32]; @symbol_type<0> = [Boolean,638,36,43]; ]
+            const hasTouchScreen as Boolean = true;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 639; @position = 18; @symbol_constdef = [hasEnhancedReadabilityMode,639,18,44]; @symbol_type<0> = [Boolean,639,48,55]; ]
+            const hasEnhancedReadabilityMode as Boolean = false;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 642; @symbol_moduledef = [confirmation_icon_dark__hint_confirm,642,15,51]; ]
+        module confirmation_icon_dark__hint_confirm {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 642; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 643; @position = 18; @symbol_constdef = [filename,643,18,26]; @symbol_type<0> = [String,643,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/confirmation_icon__hint_completion.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 644; @position = 18; @symbol_constdef = [dithering,644,18,27]; @symbol_type<0> = [String,644,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 645; @position = 18; @symbol_constdef = [packingFormat,645,18,31]; @symbol_type<0> = [String,645,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 648; @symbol_moduledef = [prompt_font__body_no_title,648,15,41]; ]
+        module prompt_font__body_no_title {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 648; ]
+            <init> {
+[ "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen" 649 18 ]
+                symbol [ Graphics %tmp.95 649 34 42 ];
+                %tmp.95 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.96 649 43 62 ];
+                %tmp.96 = getv %tmp.95 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.97 649 63 71 ];
+                %tmp.97 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.98 649 72 92 ];
+                %tmp.98 = getv %tmp.97 :TEXT_JUSTIFY_VCENTER;
+                %tmp.99 = bitor %tmp.96 %tmp.98;
+                putv self :justification %tmp.99;
+[ "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen" 650 18 ]
+                symbol [ Graphics %tmp.100 650 25 33 ];
+                %tmp.100 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.101 650 34 43 ];
+                %tmp.101 = getv %tmp.100 :FONT_TINY;
+                putv self :font %tmp.101;
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 649; @position = 18; @symbol_constdef = [justification,649,18,31]; ]
+            const justification;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 650; @position = 18; @symbol_constdef = [font,650,18,22]; ]
+            const font;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 653; @symbol_moduledef = [prompt_size__title_icon,653,15,38]; ]
+        module prompt_size__title_icon {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 653; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 654; @position = 18; @symbol_constdef = [scaleX,654,18,24]; @symbol_type<0> = [Float,654,28,33]; ]
+            const scaleX as Float = 0.14;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 655; @position = 18; @symbol_constdef = [scaleRelativeTo,655,18,33]; @symbol_type<0> = [String,655,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 658; @symbol_moduledef = [system_icon_dark__warning,658,15,40]; ]
+        module system_icon_dark__warning {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 658; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 659; @position = 18; @symbol_constdef = [filename,659,18,26]; @symbol_type<0> = [String,659,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_dark__warning.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 660; @position = 18; @symbol_constdef = [compress,660,18,26]; @symbol_type<0> = [String,660,30,36]; ]
+            const compress as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 661; @position = 18; @symbol_constdef = [dithering,661,18,27]; @symbol_type<0> = [String,661,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 662; @position = 18; @symbol_constdef = [automaticPalette,662,18,34]; @symbol_type<0> = [String,662,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 663; @position = 18; @symbol_constdef = [packingFormat,663,18,31]; @symbol_type<0> = [String,663,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 666; @symbol_moduledef = [prompt_loc__title_icon,666,15,37]; ]
+        module prompt_loc__title_icon {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 666; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 667; @position = 18; @symbol_constdef = [x,667,18,19]; @symbol_type<0> = [Number,667,23,29]; ]
+            const x as Number = 227;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 668; @position = 18; @symbol_constdef = [y,668,18,19]; @symbol_type<0> = [Number,668,23,29]; ]
+            const y as Number = 42;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 669; @position = 18; @symbol_constdef = [horizontalJustification,669,18,41]; @symbol_type<0> = [String,669,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 670; @position = 18; @symbol_constdef = [verticalJustification,670,18,39]; @symbol_type<0> = [String,670,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 673; @symbol_moduledef = [prompt_font_enhanced_readability__title,673,15,54]; ]
+        module prompt_font_enhanced_readability__title {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 673; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 674; @position = 18; @symbol_constdef = [exclude,674,18,25]; @symbol_type<0> = [Boolean,674,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 677; @symbol_moduledef = [prompt_color_dark__body,677,15,38]; ]
+        module prompt_color_dark__body {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 677; ]
+            <init> {
+[ "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen" 679 18 ]
+                symbol [ Graphics %tmp.102 679 31 39 ];
+                %tmp.102 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.103 679 40 57 ];
+                %tmp.103 = getv %tmp.102 :COLOR_TRANSPARENT;
+                putv self :background %tmp.103;
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 678; @position = 18; @symbol_constdef = [color,678,18,23]; @symbol_type<0> = [Number,678,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 679; @position = 18; @symbol_constdef = [background,679,18,28]; ]
+            const background;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 682; @symbol_moduledef = [confirmation_icon__hint_delete,682,15,45]; ]
+        module confirmation_icon__hint_delete {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 682; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 683; @position = 18; @symbol_constdef = [filename,683,18,26]; @symbol_type<0> = [String,683,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/confirmation_icon__hint_delete.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 684; @position = 18; @symbol_constdef = [dithering,684,18,27]; @symbol_type<0> = [String,684,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 685; @position = 18; @symbol_constdef = [packingFormat,685,18,31]; @symbol_type<0> = [String,685,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 688; @symbol_moduledef = [system_icon_light__hint_button_right_top,688,15,55]; ]
+        module system_icon_light__hint_button_right_top {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 688; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 689; @position = 18; @symbol_constdef = [filename,689,18,26]; @symbol_type<0> = [String,689,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_light__hint_button_right_top.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 690; @position = 18; @symbol_constdef = [dithering,690,18,27]; @symbol_type<0> = [String,690,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 693; @symbol_moduledef = [confirmation_size__body,693,15,38]; ]
+        module confirmation_size__body {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 693; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 694; @position = 18; @symbol_constdef = [width,694,18,23]; @symbol_type<0> = [Number,694,27,33]; ]
+            const width as Number = 386;
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 695; @position = 18; @symbol_constdef = [height,695,18,24]; @symbol_type<0> = [Number,695,28,34]; ]
+            const height as Number = 257;
+        }
+        [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 698; @symbol_moduledef = [system_icon_positive__check,698,15,42]; ]
+        module system_icon_positive__check {
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 698; ]
+            <init> {
+            }
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 699; @position = 18; @symbol_constdef = [filename,699,18,26]; @symbol_type<0> = [String,699,30,36]; ]
+            const filename as String = "/Users/christophehumbert/Library/Application Support/Garmin/ConnectIQ/Devices/approachs7047mm/system_icon_positive__check.svg";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 700; @position = 18; @symbol_constdef = [dithering,700,18,27]; @symbol_type<0> = [String,700,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 701; @position = 18; @symbol_constdef = [packingFormat,701,18,31]; @symbol_type<0> = [String,701,35,41]; ]
+            const packingFormat as String = "png";
+        }
+    }
+}
+[ @file = "/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4234-00/source/Rez.mcgen"; @line = 1; ]
+<init> {
+}

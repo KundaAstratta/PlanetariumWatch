@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchApp.mc" id="1" lineNum="26" parent="globals" pc="268435460" symbol="getApp"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchApp.mc" id="1" lineNum="27" parent="globals" pc="268435470" symbol="getApp"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchApp.mc" id="2" lineNum="5" parent="globals/PlanetariumWatchApp" pc="268435481" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4536-00/source/Rez.mcgen" id="3" lineNum="7" parent="globals/Rez" pc="268435493" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="4" lineNum="9" parent="globals/PlanetariumWatchView" pc="268435513" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchApp.mc" id="5" lineNum="12" parent="globals/PlanetariumWatchApp" pc="268435525" symbol="onStart"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchApp.mc" id="6" lineNum="20" parent="globals/PlanetariumWatchApp" pc="268435528" symbol="getInitialView"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchApp.mc" id="6" lineNum="21" parent="globals/PlanetariumWatchApp" pc="268435530" symbol="getInitialView"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchApp.mc" id="7" lineNum="7" parent="globals/PlanetariumWatchApp" pc="268435560" symbol="initialize"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchApp.mc" id="7" lineNum="8" parent="globals/PlanetariumWatchApp" pc="268435562" symbol="initialize"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchApp.mc" id="8" lineNum="16" parent="globals/PlanetariumWatchApp" pc="268435575" symbol="onStop"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetaryCalculations.mc" id="9" lineNum="48" parent="globals/PlanetaryCalculations" pc="268435578" symbol="getPlanetData"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetaryCalculations.mc" id="9" lineNum="49" parent="globals/PlanetaryCalculations" pc="268435580" symbol="getPlanetData"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetaryCalculations.mc" id="10" lineNum="31" parent="globals/PlanetaryCalculations" pc="268435936" symbol="calculatePlanetAngle"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetaryCalculations.mc" id="10" lineNum="32" parent="globals/PlanetaryCalculations" pc="268435939" symbol="calculatePlanetAngle"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetaryCalculations.mc" id="10" lineNum="33" parent="globals/PlanetaryCalculations" pc="268435951" symbol="calculatePlanetAngle"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetaryCalculations.mc" id="10" lineNum="34" parent="globals/PlanetaryCalculations" pc="268435969" symbol="calculatePlanetAngle"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetaryCalculations.mc" id="10" lineNum="35" parent="globals/PlanetaryCalculations" pc="268435976" symbol="calculatePlanetAngle"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetaryCalculations.mc" id="10" lineNum="36" parent="globals/PlanetaryCalculations" pc="268436004" symbol="calculatePlanetAngle"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetaryCalculations.mc" id="12" lineNum="40" parent="globals/PlanetaryCalculations" pc="268436007" symbol="calculatePlanetPosition"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetaryCalculations.mc" id="12" lineNum="42" parent="globals/PlanetaryCalculations" pc="268436010" symbol="calculatePlanetPosition"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetaryCalculations.mc" id="12" lineNum="43" parent="globals/PlanetaryCalculations" pc="268436032" symbol="calculatePlanetPosition"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetaryCalculations.mc" id="12" lineNum="44" parent="globals/PlanetaryCalculations" pc="268436054" symbol="calculatePlanetPosition"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="13" lineNum="332" parent="globals/PlanetariumWatchView" pc="268436079" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourIndicator&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="13" lineNum="333" parent="globals/PlanetariumWatchView" pc="268436082" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourIndicator&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="13" lineNum="336" parent="globals/PlanetariumWatchView" pc="268436094" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourIndicator&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="13" lineNum="337" parent="globals/PlanetariumWatchView" pc="268436112" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourIndicator&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="13" lineNum="340" parent="globals/PlanetariumWatchView" pc="268436137" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourIndicator&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="13" lineNum="341" parent="globals/PlanetariumWatchView" pc="268436147" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourIndicator&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="13" lineNum="342" parent="globals/PlanetariumWatchView" pc="268436172" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourIndicator&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="13" lineNum="345" parent="globals/PlanetariumWatchView" pc="268436197" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourIndicator&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="13" lineNum="346" parent="globals/PlanetariumWatchView" pc="268436214" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourIndicator&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="13" lineNum="349" parent="globals/PlanetariumWatchView" pc="268436230" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourIndicator&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="13" lineNum="350" parent="globals/PlanetariumWatchView" pc="268436247" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourIndicator&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="13" lineNum="351" parent="globals/PlanetariumWatchView" pc="268436259" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourIndicator&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="14" lineNum="354" parent="globals/PlanetariumWatchView" pc="268436276" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="14" lineNum="355" parent="globals/PlanetariumWatchView" pc="268436279" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="14" lineNum="357" parent="globals/PlanetariumWatchView" pc="268436293" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="14" lineNum="358" parent="globals/PlanetariumWatchView" pc="268436298" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="14" lineNum="359" parent="globals/PlanetariumWatchView" pc="268436309" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="14" lineNum="360" parent="globals/PlanetariumWatchView" pc="268436322" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="14" lineNum="361" parent="globals/PlanetariumWatchView" pc="268436344" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="14" lineNum="362" parent="globals/PlanetariumWatchView" pc="268436372" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="14" lineNum="363" parent="globals/PlanetariumWatchView" pc="268436400" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="14" lineNum="366" parent="globals/PlanetariumWatchView" pc="268436439" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="15" lineNum="444" parent="globals/PlanetariumWatchView" pc="268436452" symbol="drawNebulaSleepMode"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="15" lineNum="445" parent="globals/PlanetariumWatchView" pc="268436455" symbol="drawNebulaSleepMode"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="15" lineNum="446" parent="globals/PlanetariumWatchView" pc="268436467" symbol="drawNebulaSleepMode"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="15" lineNum="448" parent="globals/PlanetariumWatchView" pc="268436475" symbol="drawNebulaSleepMode"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="15" lineNum="450" parent="globals/PlanetariumWatchView" pc="268436488" symbol="drawNebulaSleepMode"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="15" lineNum="453" parent="globals/PlanetariumWatchView" pc="268436517" symbol="drawNebulaSleepMode"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="15" lineNum="454" parent="globals/PlanetariumWatchView" pc="268436538" symbol="drawNebulaSleepMode"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="15" lineNum="457" parent="globals/PlanetariumWatchView" pc="268436572" symbol="drawNebulaSleepMode"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="15" lineNum="458" parent="globals/PlanetariumWatchView" pc="268436593" symbol="drawNebulaSleepMode"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="15" lineNum="459" parent="globals/PlanetariumWatchView" pc="268436614" symbol="drawNebulaSleepMode"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="16" lineNum="403" parent="globals/PlanetariumWatchView" pc="268436646" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSystemInfo&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="16" lineNum="404" parent="globals/PlanetariumWatchView" pc="268436649" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSystemInfo&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="16" lineNum="407" parent="globals/PlanetariumWatchView" pc="268436666" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSystemInfo&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="16" lineNum="408" parent="globals/PlanetariumWatchView" pc="268436692" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSystemInfo&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="16" lineNum="409" parent="globals/PlanetariumWatchView" pc="268436704" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSystemInfo&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="16" lineNum="414" parent="globals/PlanetariumWatchView" pc="268436712" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSystemInfo&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="16" lineNum="416" parent="globals/PlanetariumWatchView" pc="268436728" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSystemInfo&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="16" lineNum="417" parent="globals/PlanetariumWatchView" pc="268436735" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSystemInfo&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="16" lineNum="418" parent="globals/PlanetariumWatchView" pc="268436748" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSystemInfo&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="16" lineNum="419" parent="globals/PlanetariumWatchView" pc="268436773" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSystemInfo&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="16" lineNum="422" parent="globals/PlanetariumWatchView" pc="268436801" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSystemInfo&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="16" lineNum="423" parent="globals/PlanetariumWatchView" pc="268436820" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSystemInfo&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="16" lineNum="426" parent="globals/PlanetariumWatchView" pc="268436839" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSystemInfo&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="16" lineNum="427" parent="globals/PlanetariumWatchView" pc="268436856" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSystemInfo&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="16" lineNum="430" parent="globals/PlanetariumWatchView" pc="268436893" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSystemInfo&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="16" lineNum="431" parent="globals/PlanetariumWatchView" pc="268436905" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSystemInfo&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="16" lineNum="434" parent="globals/PlanetariumWatchView" pc="268436913" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSystemInfo&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="16" lineNum="436" parent="globals/PlanetariumWatchView" pc="268436921" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSystemInfo&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="16" lineNum="437" parent="globals/PlanetariumWatchView" pc="268436928" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSystemInfo&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="16" lineNum="440" parent="globals/PlanetariumWatchView" pc="268436935" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSystemInfo&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="17" lineNum="158" parent="globals/PlanetariumWatchView" pc="268436961" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawPlanets&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="17" lineNum="159" parent="globals/PlanetariumWatchView" pc="268436964" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawPlanets&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="17" lineNum="160" parent="globals/PlanetariumWatchView" pc="268436981" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawPlanets&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="17" lineNum="163" parent="globals/PlanetariumWatchView" pc="268436994" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawPlanets&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="17" lineNum="164" parent="globals/PlanetariumWatchView" pc="268437011" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawPlanets&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="17" lineNum="167" parent="globals/PlanetariumWatchView" pc="268437033" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawPlanets&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="17" lineNum="168" parent="globals/PlanetariumWatchView" pc="268437050" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawPlanets&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="17" lineNum="169" parent="globals/PlanetariumWatchView" pc="268437062" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawPlanets&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="17" lineNum="172" parent="globals/PlanetariumWatchView" pc="268437084" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawPlanets&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="17" lineNum="173" parent="globals/PlanetariumWatchView" pc="268437100" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawPlanets&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="17" lineNum="174" parent="globals/PlanetariumWatchView" pc="268437112" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawPlanets&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="17" lineNum="175" parent="globals/PlanetariumWatchView" pc="268437128" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawPlanets&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="17" lineNum="176" parent="globals/PlanetariumWatchView" pc="268437135" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawPlanets&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="17" lineNum="177" parent="globals/PlanetariumWatchView" pc="268437148" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawPlanets&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="17" lineNum="181" parent="globals/PlanetariumWatchView" pc="268437180" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawPlanets&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="17" lineNum="182" parent="globals/PlanetariumWatchView" pc="268437196" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawPlanets&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="17" lineNum="183" parent="globals/PlanetariumWatchView" pc="268437203" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawPlanets&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="17" lineNum="186" parent="globals/PlanetariumWatchView" pc="268437238" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawPlanets&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="17" lineNum="187" parent="globals/PlanetariumWatchView" pc="268437251" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawPlanets&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="17" lineNum="191" parent="globals/PlanetariumWatchView" pc="268437284" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawPlanets&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="17" lineNum="192" parent="globals/PlanetariumWatchView" pc="268437304" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawPlanets&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="17" lineNum="195" parent="globals/PlanetariumWatchView" pc="268437331" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawPlanets&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="17" lineNum="196" parent="globals/PlanetariumWatchView" pc="268437355" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawPlanets&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="17" lineNum="200" parent="globals/PlanetariumWatchView" pc="268437386" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawPlanets&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="17" lineNum="201" parent="globals/PlanetariumWatchView" pc="268437410" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawPlanets&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="19" lineNum="208" parent="globals/PlanetariumWatchView" pc="268437454" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSaturnRings&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="19" lineNum="209" parent="globals/PlanetariumWatchView" pc="268437457" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSaturnRings&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="19" lineNum="210" parent="globals/PlanetariumWatchView" pc="268437474" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSaturnRings&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="19" lineNum="213" parent="globals/PlanetariumWatchView" pc="268437486" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSaturnRings&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="19" lineNum="214" parent="globals/PlanetariumWatchView" pc="268437496" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSaturnRings&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="19" lineNum="217" parent="globals/PlanetariumWatchView" pc="268437503" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSaturnRings&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="19" lineNum="220" parent="globals/PlanetariumWatchView" pc="268437510" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSaturnRings&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="19" lineNum="221" parent="globals/PlanetariumWatchView" pc="268437532" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSaturnRings&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="19" lineNum="222" parent="globals/PlanetariumWatchView" pc="268437554" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSaturnRings&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="19" lineNum="223" parent="globals/PlanetariumWatchView" pc="268437576" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSaturnRings&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="19" lineNum="226" parent="globals/PlanetariumWatchView" pc="268437598" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSaturnRings&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="19" lineNum="229" parent="globals/PlanetariumWatchView" pc="268437616" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSaturnRings&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="19" lineNum="230" parent="globals/PlanetariumWatchView" pc="268437628" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSaturnRings&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="19" lineNum="231" parent="globals/PlanetariumWatchView" pc="268437635" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSaturnRings&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="19" lineNum="233" parent="globals/PlanetariumWatchView" pc="268437642" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSaturnRings&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="19" lineNum="234" parent="globals/PlanetariumWatchView" pc="268437664" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSaturnRings&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="19" lineNum="235" parent="globals/PlanetariumWatchView" pc="268437686" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSaturnRings&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="19" lineNum="236" parent="globals/PlanetariumWatchView" pc="268437708" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSaturnRings&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="19" lineNum="238" parent="globals/PlanetariumWatchView" pc="268437730" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSaturnRings&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="20" lineNum="268" parent="globals/PlanetariumWatchView" pc="268437749" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawShootingStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="20" lineNum="269" parent="globals/PlanetariumWatchView" pc="268437752" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawShootingStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="20" lineNum="273" parent="globals/PlanetariumWatchView" pc="268437764" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawShootingStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="20" lineNum="274" parent="globals/PlanetariumWatchView" pc="268437795" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawShootingStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="20" lineNum="277" parent="globals/PlanetariumWatchView" pc="268437818" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawShootingStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="20" lineNum="278" parent="globals/PlanetariumWatchView" pc="268437831" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawShootingStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="20" lineNum="279" parent="globals/PlanetariumWatchView" pc="268437856" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawShootingStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="20" lineNum="282" parent="globals/PlanetariumWatchView" pc="268437881" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawShootingStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="20" lineNum="285" parent="globals/PlanetariumWatchView" pc="268437903" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawShootingStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="20" lineNum="286" parent="globals/PlanetariumWatchView" pc="268437915" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawShootingStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="20" lineNum="289" parent="globals/PlanetariumWatchView" pc="268437932" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawShootingStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="20" lineNum="290" parent="globals/PlanetariumWatchView" pc="268437939" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawShootingStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="20" lineNum="291" parent="globals/PlanetariumWatchView" pc="268437946" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawShootingStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="20" lineNum="294" parent="globals/PlanetariumWatchView" pc="268437950" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawShootingStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="20" lineNum="297" parent="globals/PlanetariumWatchView" pc="268437977" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawShootingStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="20" lineNum="298" parent="globals/PlanetariumWatchView" pc="268437989" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawShootingStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="20" lineNum="299" parent="globals/PlanetariumWatchView" pc="268438006" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawShootingStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="20" lineNum="300" parent="globals/PlanetariumWatchView" pc="268438013" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawShootingStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="20" lineNum="301" parent="globals/PlanetariumWatchView" pc="268438020" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawShootingStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="20" lineNum="304" parent="globals/PlanetariumWatchView" pc="268438047" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawShootingStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="20" lineNum="305" parent="globals/PlanetariumWatchView" pc="268438059" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawShootingStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="20" lineNum="306" parent="globals/PlanetariumWatchView" pc="268438076" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawShootingStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="21" lineNum="242" parent="globals/PlanetariumWatchView" pc="268438093" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawJupiterSpot&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="21" lineNum="244" parent="globals/PlanetariumWatchView" pc="268438096" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawJupiterSpot&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="21" lineNum="245" parent="globals/PlanetariumWatchView" pc="268438106" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawJupiterSpot&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="21" lineNum="248" parent="globals/PlanetariumWatchView" pc="268438116" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawJupiterSpot&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="21" lineNum="249" parent="globals/PlanetariumWatchView" pc="268438138" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawJupiterSpot&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="21" lineNum="252" parent="globals/PlanetariumWatchView" pc="268438160" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawJupiterSpot&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="21" lineNum="253" parent="globals/PlanetariumWatchView" pc="268438177" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawJupiterSpot&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="21" lineNum="256" parent="globals/PlanetariumWatchView" pc="268438196" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawJupiterSpot&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="21" lineNum="257" parent="globals/PlanetariumWatchView" pc="268438213" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawJupiterSpot&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="21" lineNum="260" parent="globals/PlanetariumWatchView" pc="268438225" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawJupiterSpot&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="21" lineNum="261" parent="globals/PlanetariumWatchView" pc="268438238" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawJupiterSpot&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="21" lineNum="263" parent="globals/PlanetariumWatchView" pc="268438251" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawJupiterSpot&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="21" lineNum="264" parent="globals/PlanetariumWatchView" pc="268438275" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawJupiterSpot&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="22" lineNum="523" parent="globals/PlanetariumWatchView" pc="268438300" symbol="onExitSleep"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="22" lineNum="524" parent="globals/PlanetariumWatchView" pc="268438302" symbol="onExitSleep"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="23" lineNum="59" parent="globals/PlanetariumWatchView" pc="268438311" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawConcentricBackground&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="23" lineNum="61" parent="globals/PlanetariumWatchView" pc="268438314" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawConcentricBackground&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="23" lineNum="69" parent="globals/PlanetariumWatchView" pc="268438321" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawConcentricBackground&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="23" lineNum="70" parent="globals/PlanetariumWatchView" pc="268438331" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawConcentricBackground&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="23" lineNum="73" parent="globals/PlanetariumWatchView" pc="268438340" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawConcentricBackground&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="23" lineNum="74" parent="globals/PlanetariumWatchView" pc="268438354" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawConcentricBackground&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="23" lineNum="75" parent="globals/PlanetariumWatchView" pc="268438367" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawConcentricBackground&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="23" lineNum="76" parent="globals/PlanetariumWatchView" pc="268438384" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawConcentricBackground&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="24" lineNum="509" parent="globals/PlanetariumWatchView" pc="268438417" symbol="drawMinimalisteSleepModeTime"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="24" lineNum="511" parent="globals/PlanetariumWatchView" pc="268438419" symbol="drawMinimalisteSleepModeTime"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="24" lineNum="512" parent="globals/PlanetariumWatchView" pc="268438436" symbol="drawMinimalisteSleepModeTime"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="25" lineNum="518" parent="globals/PlanetariumWatchView" pc="268438457" symbol="onShow"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="25" lineNum="519" parent="globals/PlanetariumWatchView" pc="268438459" symbol="onShow"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="26" lineNum="369" parent="globals/PlanetariumWatchView" pc="268438468" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawNotificationStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="26" lineNum="370" parent="globals/PlanetariumWatchView" pc="268438471" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawNotificationStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="26" lineNum="371" parent="globals/PlanetariumWatchView" pc="268438483" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawNotificationStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="26" lineNum="373" parent="globals/PlanetariumWatchView" pc="268438498" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawNotificationStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="26" lineNum="375" parent="globals/PlanetariumWatchView" pc="268438506" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawNotificationStar&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="27" lineNum="23" parent="globals/PlanetariumWatchView" pc="268438547" symbol="onLayout"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="27" lineNum="24" parent="globals/PlanetariumWatchView" pc="268438549" symbol="onLayout"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="27" lineNum="25" parent="globals/PlanetariumWatchView" pc="268438566" symbol="onLayout"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="27" lineNum="26" parent="globals/PlanetariumWatchView" pc="268438583" symbol="onLayout"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="27" lineNum="27" parent="globals/PlanetariumWatchView" pc="268438620" symbol="onLayout"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="28" lineNum="493" parent="globals/PlanetariumWatchView" pc="268438638" symbol="drawFloatingParticles"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="28" lineNum="494" parent="globals/PlanetariumWatchView" pc="268438641" symbol="drawFloatingParticles"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="28" lineNum="495" parent="globals/PlanetariumWatchView" pc="268438646" symbol="drawFloatingParticles"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="28" lineNum="496" parent="globals/PlanetariumWatchView" pc="268438657" symbol="drawFloatingParticles"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="28" lineNum="497" parent="globals/PlanetariumWatchView" pc="268438678" symbol="drawFloatingParticles"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="28" lineNum="498" parent="globals/PlanetariumWatchView" pc="268438690" symbol="drawFloatingParticles"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="28" lineNum="499" parent="globals/PlanetariumWatchView" pc="268438711" symbol="drawFloatingParticles"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="28" lineNum="502" parent="globals/PlanetariumWatchView" pc="268438723" symbol="drawFloatingParticles"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="28" lineNum="504" parent="globals/PlanetariumWatchView" pc="268438748" symbol="drawFloatingParticles"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="28" lineNum="505" parent="globals/PlanetariumWatchView" pc="268438762" symbol="drawFloatingParticles"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="29" lineNum="311" parent="globals/PlanetariumWatchView" pc="268438789" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawArc&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="29" lineNum="312" parent="globals/PlanetariumWatchView" pc="268438792" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawArc&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="29" lineNum="313" parent="globals/PlanetariumWatchView" pc="268438796" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawArc&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="29" lineNum="315" parent="globals/PlanetariumWatchView" pc="268438806" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawArc&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="29" lineNum="316" parent="globals/PlanetariumWatchView" pc="268438828" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawArc&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="29" lineNum="318" parent="globals/PlanetariumWatchView" pc="268438850" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawArc&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="29" lineNum="319" parent="globals/PlanetariumWatchView" pc="268438862" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawArc&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="29" lineNum="320" parent="globals/PlanetariumWatchView" pc="268438872" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawArc&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="29" lineNum="321" parent="globals/PlanetariumWatchView" pc="268438894" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawArc&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="29" lineNum="323" parent="globals/PlanetariumWatchView" pc="268438916" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawArc&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="29" lineNum="325" parent="globals/PlanetariumWatchView" pc="268438934" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawArc&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="29" lineNum="326" parent="globals/PlanetariumWatchView" pc="268438938" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawArc&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="30" lineNum="532" parent="globals/PlanetariumWatchView" pc="268438953" symbol="onPartialUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="31" lineNum="463" parent="globals/PlanetariumWatchView" pc="268438956" symbol="drawNebulaEffect"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="31" lineNum="465" parent="globals/PlanetariumWatchView" pc="268438959" symbol="drawNebulaEffect"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="31" lineNum="466" parent="globals/PlanetariumWatchView" pc="268438966" symbol="drawNebulaEffect"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="31" lineNum="468" parent="globals/PlanetariumWatchView" pc="268438970" symbol="drawNebulaEffect"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="31" lineNum="470" parent="globals/PlanetariumWatchView" pc="268438974" symbol="drawNebulaEffect"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="31" lineNum="471" parent="globals/PlanetariumWatchView" pc="268438985" symbol="drawNebulaEffect"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="31" lineNum="473" parent="globals/PlanetariumWatchView" pc="268439006" symbol="drawNebulaEffect"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="31" lineNum="475" parent="globals/PlanetariumWatchView" pc="268439030" symbol="drawNebulaEffect"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="31" lineNum="476" parent="globals/PlanetariumWatchView" pc="268439051" symbol="drawNebulaEffect"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="31" lineNum="478" parent="globals/PlanetariumWatchView" pc="268439072" symbol="drawNebulaEffect"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="31" lineNum="479" parent="globals/PlanetariumWatchView" pc="268439094" symbol="drawNebulaEffect"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="31" lineNum="482" parent="globals/PlanetariumWatchView" pc="268439116" symbol="drawNebulaEffect"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="31" lineNum="483" parent="globals/PlanetariumWatchView" pc="268439137" symbol="drawNebulaEffect"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="31" lineNum="485" parent="globals/PlanetariumWatchView" pc="268439147" symbol="drawNebulaEffect"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="31" lineNum="486" parent="globals/PlanetariumWatchView" pc="268439168" symbol="drawNebulaEffect"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="31" lineNum="488" parent="globals/PlanetariumWatchView" pc="268439183" symbol="drawNebulaEffect"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="31" lineNum="489" parent="globals/PlanetariumWatchView" pc="268439197" symbol="drawNebulaEffect"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="32" lineNum="528" parent="globals/PlanetariumWatchView" pc="268439234" symbol="onEnterSleep"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="32" lineNum="529" parent="globals/PlanetariumWatchView" pc="268439236" symbol="onEnterSleep"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="33" lineNum="110" parent="globals/PlanetariumWatchView" pc="268439245" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="33" lineNum="111" parent="globals/PlanetariumWatchView" pc="268439248" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="33" lineNum="112" parent="globals/PlanetariumWatchView" pc="268439265" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="33" lineNum="114" parent="globals/PlanetariumWatchView" pc="268439277" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="33" lineNum="115" parent="globals/PlanetariumWatchView" pc="268439287" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="33" lineNum="118" parent="globals/PlanetariumWatchView" pc="268439297" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="33" lineNum="119" parent="globals/PlanetariumWatchView" pc="268439308" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="33" lineNum="120" parent="globals/PlanetariumWatchView" pc="268439330" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="33" lineNum="121" parent="globals/PlanetariumWatchView" pc="268439346" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="33" lineNum="123" parent="globals/PlanetariumWatchView" pc="268439362" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="33" lineNum="124" parent="globals/PlanetariumWatchView" pc="268439375" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="33" lineNum="125" parent="globals/PlanetariumWatchView" pc="268439388" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="33" lineNum="126" parent="globals/PlanetariumWatchView" pc="268439401" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="33" lineNum="128" parent="globals/PlanetariumWatchView" pc="268439414" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="33" lineNum="131" parent="globals/PlanetariumWatchView" pc="268439432" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="33" lineNum="132" parent="globals/PlanetariumWatchView" pc="268439449" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="33" lineNum="134" parent="globals/PlanetariumWatchView" pc="268439461" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="33" lineNum="135" parent="globals/PlanetariumWatchView" pc="268439486" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="33" lineNum="137" parent="globals/PlanetariumWatchView" pc="268439502" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="33" lineNum="138" parent="globals/PlanetariumWatchView" pc="268439518" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="33" lineNum="141" parent="globals/PlanetariumWatchView" pc="268439534" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="33" lineNum="142" parent="globals/PlanetariumWatchView" pc="268439544" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="33" lineNum="143" parent="globals/PlanetariumWatchView" pc="268439557" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="33" lineNum="146" parent="globals/PlanetariumWatchView" pc="268439570" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="33" lineNum="151" parent="globals/PlanetariumWatchView" pc="268439606" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="33" lineNum="152" parent="globals/PlanetariumWatchView" pc="268439623" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="33" lineNum="153" parent="globals/PlanetariumWatchView" pc="268439663" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="33" lineNum="154" parent="globals/PlanetariumWatchView" pc="268439703" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="33" lineNum="155" parent="globals/PlanetariumWatchView" pc="268439755" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="34" lineNum="80" parent="globals/PlanetariumWatchView" pc="268439808" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawStarField&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="34" lineNum="81" parent="globals/PlanetariumWatchView" pc="268439811" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawStarField&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="34" lineNum="84" parent="globals/PlanetariumWatchView" pc="268439828" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawStarField&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="34" lineNum="85" parent="globals/PlanetariumWatchView" pc="268439833" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawStarField&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="34" lineNum="86" parent="globals/PlanetariumWatchView" pc="268439842" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawStarField&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="34" lineNum="90" parent="globals/PlanetariumWatchView" pc="268439851" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawStarField&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="34" lineNum="92" parent="globals/PlanetariumWatchView" pc="268439855" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawStarField&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="34" lineNum="94" parent="globals/PlanetariumWatchView" pc="268439866" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawStarField&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="34" lineNum="95" parent="globals/PlanetariumWatchView" pc="268439887" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawStarField&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="34" lineNum="98" parent="globals/PlanetariumWatchView" pc="268439894" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawStarField&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="34" lineNum="99" parent="globals/PlanetariumWatchView" pc="268439915" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawStarField&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="34" lineNum="103" parent="globals/PlanetariumWatchView" pc="268439922" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawStarField&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="34" lineNum="104" parent="globals/PlanetariumWatchView" pc="268439943" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawStarField&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="34" lineNum="106" parent="globals/PlanetariumWatchView" pc="268439963" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawStarField&gt;"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="35" lineNum="19" parent="globals/PlanetariumWatchView" pc="268439990" symbol="initialize"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="35" lineNum="20" parent="globals/PlanetariumWatchView" pc="268439992" symbol="initialize"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="36" lineNum="30" parent="globals/PlanetariumWatchView" pc="268440005" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="36" lineNum="32" parent="globals/PlanetariumWatchView" pc="268440008" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="36" lineNum="33" parent="globals/PlanetariumWatchView" pc="268440024" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="36" lineNum="39" parent="globals/PlanetariumWatchView" pc="268440032" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="36" lineNum="40" parent="globals/PlanetariumWatchView" pc="268440041" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="36" lineNum="41" parent="globals/PlanetariumWatchView" pc="268440052" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="36" lineNum="42" parent="globals/PlanetariumWatchView" pc="268440063" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="36" lineNum="43" parent="globals/PlanetariumWatchView" pc="268440074" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="36" lineNum="44" parent="globals/PlanetariumWatchView" pc="268440085" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="36" lineNum="45" parent="globals/PlanetariumWatchView" pc="268440096" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="36" lineNum="47" parent="globals/PlanetariumWatchView" pc="268440107" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="36" lineNum="48" parent="globals/PlanetariumWatchView" pc="268440118" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="36" lineNum="50" parent="globals/PlanetariumWatchView" pc="268440132" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="36" lineNum="51" parent="globals/PlanetariumWatchView" pc="268440140" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="36" lineNum="52" parent="globals/PlanetariumWatchView" pc="268440152" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="36" lineNum="53" parent="globals/PlanetariumWatchView" pc="268440160" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/source/PlanetariumWatchView.mc" id="36" lineNum="54" parent="globals/PlanetariumWatchView" pc="268440168" symbol="onUpdate"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4536-00/source/Rez.mcgen" id="37" lineNum="13" parent="globals/Rez/Layouts" pc="268440187" symbol="WatchFace"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4536-00/source/Rez.mcgen" id="37" lineNum="14" parent="globals/Rez/Layouts" pc="268440198" symbol="WatchFace"/>
+        <entry filename="/Users/christophehumbert/Code/sdkGarminFour/PlanetariumWatch/bin/gen/006-B4536-00/source/Rez.mcgen" id="37" lineNum="16" parent="globals/Rez/Layouts" pc="268440302" symbol="WatchFace"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry field="true" id="16" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;_hasNotifications&gt;"/>
+        <entry id="23" method="true" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourIndicator&gt;"/>
+        <entry field="true" id="18" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;_radius&gt;"/>
+        <entry id="8388924" module="true" symbol="Gregorian"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="8388782" method="true" symbol="size"/>
+        <entry id="33" method="true" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawStar&gt;"/>
+        <entry id="11" method="true" symbol="calculatePlanetAngle"/>
+        <entry field="true" id="37" symbol="AppName"/>
+        <entry id="8388633" module="true" symbol="ActivityMonitor"/>
+        <entry id="6" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="34" method="true" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawStarField&gt;"/>
+        <entry id="12" method="true" symbol="calculatePlanetPosition"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="7" object="true" symbol="PlanetariumWatchApp"/>
+        <entry id="8390097" method="true" symbol="onPartialUpdate"/>
+        <entry id="3" module="true" symbol="globals/Rez"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389348" symbol="font"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry id="5" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="27" method="true" symbol="drawNebulaEffect"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry id="8389376" method="true" symbol="onEnterSleep"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry id="2" module="true" symbol="globals/PlanetaryCalculations/&lt;statics&gt;"/>
+        <entry id="9" object="true" symbol="PlanetaryCalculations"/>
+        <entry id="4" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="8" object="true" symbol="PlanetariumWatchView"/>
+        <entry id="24" method="true" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourMarkers&gt;"/>
+        <entry id="8391337" symbol="offset"/>
+        <entry id="8389377" method="true" symbol="onExitSleep"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="8388645" module="true" symbol="Time"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="32" method="true" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawShootingStar&gt;"/>
+        <entry id="13" method="true" symbol="getPlanetData"/>
+        <entry id="35" method="true" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSystemInfo&gt;"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry field="true" id="36" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry field="true" id="8388892" symbol="name"/>
+        <entry id="8389808" symbol="period"/>
+        <entry id="8388641" module="true" symbol="Math"/>
+        <entry id="29" method="true" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawNotificationStar&gt;"/>
+        <entry field="true" id="17" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;_isInSleepMode&gt;"/>
+        <entry field="true" id="19" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;_radiusMarkers&gt;"/>
+        <entry id="30" method="true" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawPlanets&gt;"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="38" symbol="orbit"/>
+        <entry field="true" id="8389347" symbol="color"/>
+        <entry field="true" id="15" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;_centerY&gt;"/>
+        <entry id="20" method="true" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawArc&gt;"/>
+        <entry field="true" id="14" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;_centerX&gt;"/>
+        <entry id="21" method="true" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawConcentricBackground&gt;"/>
+        <entry id="10" module="true" symbol="Layouts"/>
+        <entry id="22" method="true" symbol="drawFloatingParticles"/>
+        <entry id="25" method="true" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawJupiterSpot&gt;"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry id="31" method="true" symbol="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSaturnRings&gt;"/>
+        <entry id="28" method="true" symbol="drawNebulaSleepMode"/>
+        <entry id="26" method="true" symbol="drawMinimalisteSleepModeTime"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268436006" name="period" stackId="1" startPc="268435936"/>
+        <entry arg="true" endPc="268436006" name="epochOffset" stackId="2" startPc="268435936"/>
+        <entry endPc="268436006" name="now" stackId="3" startPc="268435939"/>
+        <entry endPc="268436006" name="daysSinceEpoch" stackId="4" startPc="268435939"/>
+        <entry endPc="268436006" name="cycles" stackId="5" startPc="268435939"/>
+        <entry endPc="268436006" name="angle" stackId="6" startPc="268435939"/>
+        <entry arg="true" endPc="268436078" name="centerX" stackId="1" startPc="268436007"/>
+        <entry arg="true" endPc="268436078" name="centerY" stackId="2" startPc="268436007"/>
+        <entry arg="true" endPc="268436078" name="radius" stackId="3" startPc="268436007"/>
+        <entry arg="true" endPc="268436078" name="angle" stackId="4" startPc="268436007"/>
+        <entry endPc="268436078" name="x" stackId="5" startPc="268436010"/>
+        <entry endPc="268436078" name="y" stackId="6" startPc="268436010"/>
+        <entry arg="true" endPc="268436275" name="dc" stackId="1" startPc="268436079"/>
+        <entry endPc="268436274" name="clockTime" stackId="2" startPc="268436082"/>
+        <entry endPc="268436274" name="totalMinutes" stackId="3" startPc="268436082"/>
+        <entry endPc="268436274" name="angle24h" stackId="4" startPc="268436082"/>
+        <entry endPc="268436274" name="indicatorRadius" stackId="5" startPc="268436082"/>
+        <entry endPc="268436274" name="indicatorX" stackId="6" startPc="268436082"/>
+        <entry endPc="268436274" name="indicatorY" stackId="7" startPc="268436082"/>
+        <entry arg="true" endPc="268436451" name="dc" stackId="1" startPc="268436276"/>
+        <entry arg="true" endPc="268436451" name="centerX" stackId="2" startPc="268436276"/>
+        <entry arg="true" endPc="268436451" name="centerY" stackId="3" startPc="268436276"/>
+        <entry arg="true" endPc="268436451" name="size" stackId="4" startPc="268436276"/>
+        <entry arg="true" endPc="268436451" name="color" stackId="5" startPc="268436276"/>
+        <entry endPc="268436450" name="points" stackId="6" startPc="268436279"/>
+        <entry endPc="268436438" name="i" stackId="7" startPc="268436309"/>
+        <entry endPc="268436428" name="angle" stackId="8" startPc="268436309"/>
+        <entry endPc="268436428" name="radius" stackId="9" startPc="268436309"/>
+        <entry endPc="268436428" name="x" stackId="10" startPc="268436309"/>
+        <entry endPc="268436428" name="y" stackId="11" startPc="268436309"/>
+        <entry arg="true" endPc="268436645" name="dc" stackId="1" startPc="268436452"/>
+        <entry arg="true" endPc="268436645" name="hours" stackId="2" startPc="268436452"/>
+        <entry arg="true" endPc="268436645" name="minutes" stackId="3" startPc="268436452"/>
+        <entry endPc="268436644" name="hoursY" stackId="4" startPc="268436455"/>
+        <entry endPc="268436644" name="minutesX" stackId="5" startPc="268436455"/>
+        <entry endPc="268436644" name="minutesY" stackId="6" startPc="268436455"/>
+        <entry arg="true" endPc="268436960" name="dc" stackId="1" startPc="268436646"/>
+        <entry endPc="268436959" name="today" stackId="2" startPc="268436649"/>
+        <entry endPc="268436959" name="clockTime" stackId="3" startPc="268436649"/>
+        <entry endPc="268436959" name="currentHour" stackId="4" startPc="268436649"/>
+        <entry endPc="268436959" name="dateX" stackId="5" startPc="268436649"/>
+        <entry endPc="268436959" name="dateY" stackId="6" startPc="268436649"/>
+        <entry endPc="268436797" name="angle21h" stackId="7" startPc="268436728"/>
+        <entry endPc="268436797" name="radius21h" stackId="8" startPc="268436728"/>
+        <entry endPc="268436959" name="stats" stackId="9" startPc="268436649"/>
+        <entry endPc="268436959" name="batteryLevel" stackId="10" startPc="268436649"/>
+        <entry endPc="268436956" name="starX" stackId="11" startPc="268436921"/>
+        <entry endPc="268436956" name="starY" stackId="12" startPc="268436921"/>
+        <entry arg="true" endPc="268437453" name="dc" stackId="1" startPc="268436961"/>
+        <entry endPc="268437452" name="planets" stackId="2" startPc="268436964"/>
+        <entry endPc="268437452" name="maxRadius" stackId="3" startPc="268436964"/>
+        <entry endPc="268437179" name="i" stackId="4" startPc="268437128"/>
+        <entry endPc="268437169" name="planet" stackId="5" startPc="268437128"/>
+        <entry endPc="268437169" name="orbitRadius" stackId="6" startPc="268437128"/>
+        <entry endPc="268437452" name="i" stackId="7" startPc="268437196"/>
+        <entry endPc="268437442" name="planet" stackId="8" startPc="268437196"/>
+        <entry endPc="268437442" name="angle" stackId="9" startPc="268437196"/>
+        <entry endPc="268437442" name="orbitRadius" stackId="10" startPc="268437196"/>
+        <entry endPc="268437442" name="position" stackId="11" startPc="268437196"/>
+        <entry arg="true" endPc="268437748" name="dc" stackId="1" startPc="268437454"/>
+        <entry arg="true" endPc="268437748" name="planetX" stackId="2" startPc="268437454"/>
+        <entry arg="true" endPc="268437748" name="planetY" stackId="3" startPc="268437454"/>
+        <entry arg="true" endPc="268437748" name="planetSize" stackId="4" startPc="268437454"/>
+        <entry endPc="268437747" name="ringLength" stackId="5" startPc="268437457"/>
+        <entry endPc="268437747" name="ringOffset" stackId="6" startPc="268437457"/>
+        <entry endPc="268437747" name="ringAngle" stackId="7" startPc="268437457"/>
+        <entry endPc="268437747" name="startX" stackId="8" startPc="268437457"/>
+        <entry endPc="268437747" name="startY" stackId="9" startPc="268437457"/>
+        <entry endPc="268437747" name="endX" stackId="10" startPc="268437457"/>
+        <entry endPc="268437747" name="endY" stackId="11" startPc="268437457"/>
+        <entry endPc="268437747" name="outerRingLength" stackId="12" startPc="268437457"/>
+        <entry endPc="268437747" name="outerRingOffset" stackId="13" startPc="268437457"/>
+        <entry endPc="268437747" name="outerStartX" stackId="14" startPc="268437457"/>
+        <entry endPc="268437747" name="outerStartY" stackId="15" startPc="268437457"/>
+        <entry endPc="268437747" name="outerEndX" stackId="16" startPc="268437457"/>
+        <entry endPc="268437747" name="outerEndY" stackId="17" startPc="268437457"/>
+        <entry arg="true" endPc="268438092" name="dc" stackId="1" startPc="268437749"/>
+        <entry endPc="268438091" name="clockTime" stackId="2" startPc="268437752"/>
+        <entry endPc="268438091" name="totalMinutes" stackId="3" startPc="268437752"/>
+        <entry endPc="268438091" name="angle24h" stackId="4" startPc="268437752"/>
+        <entry endPc="268438091" name="starRadius" stackId="5" startPc="268437752"/>
+        <entry endPc="268438091" name="starX" stackId="6" startPc="268437752"/>
+        <entry endPc="268438091" name="starY" stackId="7" startPc="268437752"/>
+        <entry endPc="268438091" name="arcLength" stackId="8" startPc="268437752"/>
+        <entry endPc="268438091" name="startArcAngle" stackId="9" startPc="268437752"/>
+        <entry endPc="268438091" name="endArcAngle" stackId="10" startPc="268437752"/>
+        <entry endPc="268438091" name="extendedArcLength" stackId="11" startPc="268437752"/>
+        <entry endPc="268438091" name="extendedStartAngle" stackId="12" startPc="268437752"/>
+        <entry arg="true" endPc="268438299" name="dc" stackId="1" startPc="268438093"/>
+        <entry arg="true" endPc="268438299" name="planetX" stackId="2" startPc="268438093"/>
+        <entry arg="true" endPc="268438299" name="planetY" stackId="3" startPc="268438093"/>
+        <entry arg="true" endPc="268438299" name="planetSize" stackId="4" startPc="268438093"/>
+        <entry arg="true" endPc="268438299" name="planetAngle" stackId="5" startPc="268438093"/>
+        <entry endPc="268438298" name="spotAngle" stackId="6" startPc="268438096"/>
+        <entry endPc="268438298" name="spotDistance" stackId="7" startPc="268438096"/>
+        <entry endPc="268438298" name="spotX" stackId="8" startPc="268438096"/>
+        <entry endPc="268438298" name="spotY" stackId="9" startPc="268438096"/>
+        <entry endPc="268438298" name="bandY1" stackId="10" startPc="268438096"/>
+        <entry endPc="268438298" name="bandY2" stackId="11" startPc="268438096"/>
+        <entry arg="true" endPc="268438416" name="dc" stackId="1" startPc="268438311"/>
+        <entry endPc="268438415" name="colors" stackId="2" startPc="268438314"/>
+        <entry endPc="268438415" name="maxRadius" stackId="3" startPc="268438314"/>
+        <entry endPc="268438415" name="numRings" stackId="4" startPc="268438314"/>
+        <entry endPc="268438415" name="i" stackId="5" startPc="268438354"/>
+        <entry endPc="268438405" name="ringRadius" stackId="6" startPc="268438354"/>
+        <entry arg="true" endPc="268438456" name="dc" stackId="1" startPc="268438417"/>
+        <entry arg="true" endPc="268438456" name="text" stackId="2" startPc="268438417"/>
+        <entry arg="true" endPc="268438456" name="x" stackId="3" startPc="268438417"/>
+        <entry arg="true" endPc="268438456" name="y" stackId="4" startPc="268438417"/>
+        <entry arg="true" endPc="268438456" name="font" stackId="5" startPc="268438417"/>
+        <entry arg="true" endPc="268438546" name="dc" stackId="1" startPc="268438468"/>
+        <entry endPc="268438545" name="settings" stackId="2" startPc="268438471"/>
+        <entry arg="true" endPc="268438637" name="dc" stackId="1" startPc="268438547"/>
+        <entry arg="true" endPc="268438788" name="dc" stackId="1" startPc="268438638"/>
+        <entry arg="true" endPc="268438788" name="count" stackId="2" startPc="268438638"/>
+        <entry endPc="268438787" name="localSeed" stackId="3" startPc="268438641"/>
+        <entry endPc="268438787" name="i" stackId="4" startPc="268438657"/>
+        <entry endPc="268438777" name="x" stackId="5" startPc="268438657"/>
+        <entry endPc="268438777" name="y" stackId="6" startPc="268438657"/>
+        <entry endPc="268438777" name="color" stackId="7" startPc="268438657"/>
+        <entry arg="true" endPc="268438952" name="dc" stackId="1" startPc="268438789"/>
+        <entry arg="true" endPc="268438952" name="centerX" stackId="2" startPc="268438789"/>
+        <entry arg="true" endPc="268438952" name="centerY" stackId="3" startPc="268438789"/>
+        <entry arg="true" endPc="268438952" name="radius" stackId="4" startPc="268438789"/>
+        <entry arg="true" endPc="268438952" name="startAngle" stackId="5" startPc="268438789"/>
+        <entry arg="true" endPc="268438952" name="endAngle" stackId="6" startPc="268438789"/>
+        <entry endPc="268438951" name="numSegments" stackId="7" startPc="268438792"/>
+        <entry endPc="268438951" name="angleStep" stackId="8" startPc="268438792"/>
+        <entry endPc="268438951" name="prevX" stackId="9" startPc="268438792"/>
+        <entry endPc="268438951" name="prevY" stackId="10" startPc="268438792"/>
+        <entry endPc="268438951" name="i" stackId="11" startPc="268438862"/>
+        <entry endPc="268438941" name="currentAngle" stackId="12" startPc="268438862"/>
+        <entry endPc="268438941" name="currentX" stackId="13" startPc="268438862"/>
+        <entry endPc="268438941" name="currentY" stackId="14" startPc="268438862"/>
+        <entry arg="true" endPc="268439233" name="dc" stackId="1" startPc="268438956"/>
+        <entry arg="true" endPc="268439233" name="centerX" stackId="2" startPc="268438956"/>
+        <entry arg="true" endPc="268439233" name="centerY" stackId="3" startPc="268438956"/>
+        <entry arg="true" endPc="268439233" name="seed" stackId="4" startPc="268438956"/>
+        <entry endPc="268439232" name="colors" stackId="5" startPc="268438959"/>
+        <entry endPc="268439232" name="localSeed" stackId="6" startPc="268438959"/>
+        <entry endPc="268439232" name="particleCount" stackId="7" startPc="268438959"/>
+        <entry endPc="268439232" name="i" stackId="8" startPc="268438985"/>
+        <entry endPc="268439222" name="angle" stackId="9" startPc="268438985"/>
+        <entry endPc="268439222" name="radius" stackId="10" startPc="268438985"/>
+        <entry endPc="268439222" name="x" stackId="11" startPc="268438985"/>
+        <entry endPc="268439222" name="y" stackId="12" startPc="268438985"/>
+        <entry endPc="268439222" name="size" stackId="13" startPc="268438985"/>
+        <entry endPc="268439222" name="color" stackId="14" startPc="268438985"/>
+        <entry arg="true" endPc="268439807" name="dc" stackId="1" startPc="268439245"/>
+        <entry endPc="268439806" name="outerRadius" stackId="2" startPc="268439248"/>
+        <entry endPc="268439806" name="innerRadius" stackId="3" startPc="268439248"/>
+        <entry endPc="268439605" name="i" stackId="4" startPc="268439308"/>
+        <entry endPc="268439595" name="angle" stackId="5" startPc="268439308"/>
+        <entry endPc="268439595" name="cos" stackId="6" startPc="268439308"/>
+        <entry endPc="268439595" name="sin" stackId="7" startPc="268439308"/>
+        <entry endPc="268439595" name="x1" stackId="8" startPc="268439308"/>
+        <entry endPc="268439595" name="y1" stackId="9" startPc="268439308"/>
+        <entry endPc="268439595" name="x2" stackId="10" startPc="268439308"/>
+        <entry endPc="268439595" name="y2" stackId="11" startPc="268439308"/>
+        <entry endPc="268439595" name="j" stackId="12" startPc="268439461"/>
+        <entry endPc="268439585" name="nextHourAngle" stackId="13" startPc="268439461"/>
+        <entry endPc="268439585" name="pointAngle" stackId="14" startPc="268439461"/>
+        <entry endPc="268439585" name="pointCos" stackId="15" startPc="268439461"/>
+        <entry endPc="268439585" name="pointSin" stackId="16" startPc="268439461"/>
+        <entry endPc="268439585" name="pointRadius" stackId="17" startPc="268439461"/>
+        <entry endPc="268439585" name="pointX" stackId="18" startPc="268439461"/>
+        <entry endPc="268439585" name="pointY" stackId="19" startPc="268439461"/>
+        <entry arg="true" endPc="268439989" name="dc" stackId="1" startPc="268439808"/>
+        <entry endPc="268439988" name="numStars" stackId="2" startPc="268439811"/>
+        <entry endPc="268439988" name="width" stackId="3" startPc="268439811"/>
+        <entry endPc="268439988" name="height" stackId="4" startPc="268439811"/>
+        <entry endPc="268439988" name="seed" stackId="5" startPc="268439811"/>
+        <entry endPc="268439988" name="i" stackId="6" startPc="268439866"/>
+        <entry endPc="268439978" name="x" stackId="7" startPc="268439866"/>
+        <entry endPc="268439978" name="y" stackId="8" startPc="268439866"/>
+        <entry endPc="268439978" name="size" stackId="9" startPc="268439866"/>
+        <entry arg="true" endPc="268440186" name="dc" stackId="1" startPc="268440005"/>
+        <entry endPc="268440182" name="clockTime" stackId="2" startPc="268440140"/>
+        <entry endPc="268440182" name="hours" stackId="3" startPc="268440140"/>
+        <entry endPc="268440182" name="minutes" stackId="4" startPc="268440140"/>
+        <entry arg="true" endPc="268440311" name="dc" stackId="1" startPc="268440187"/>
+        <entry endPc="268440311" name="rez_cmp_local_text_TimeLabel" stackId="2" startPc="268440198"/>
+    </localVars>
+    <deviceInfo deviceVersion="54c5482f11d914bff6bb8a569f46b55197d117d5" partNumber="006-B4536-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="67" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/PlanetariumWatchApp" offset="143" parentId="globals" symbolId="PlanetariumWatchApp" type="class"/>
+        <dataEntry label="globals/Rez" offset="214" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/PlanetaryCalculations" offset="267" parentId="globals" symbolId="PlanetaryCalculations" type="class"/>
+        <dataEntry label="globals/PlanetaryCalculations/&lt;statics&gt;" offset="315" parentId="PlanetaryCalculations" symbolId="&lt;statics&gt;" type="module"/>
+        <dataEntry label="globals/PlanetariumWatchView" offset="364" parentId="globals" symbolId="PlanetariumWatchView" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="669" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="704" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="739" parentId="Rez" symbolId="Strings" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435480" name="getApp" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435492" name="&lt;init&gt;" parent="PlanetariumWatchApp" startPc="268435481">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435512" name="&lt;init&gt;" parent="Rez" startPc="268435493">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="PlanetaryCalculations">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="globals/PlanetaryCalculations">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435524" name="&lt;init&gt;" parent="PlanetariumWatchView" startPc="268435513">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435527" name="onStart" parent="PlanetariumWatchApp" startPc="268435525">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435559" name="getInitialView" parent="PlanetariumWatchApp" startPc="268435528">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435574" name="initialize" parent="PlanetariumWatchApp" startPc="268435560">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435577" name="onStop" parent="PlanetariumWatchApp" startPc="268435575">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435935" name="getPlanetData" parent="PlanetaryCalculations" startPc="268435578">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436006" name="calculatePlanetAngle" parent="PlanetaryCalculations" startPc="268435936">
+            <param id="period"/>
+            <param id="epochOffset"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="initialize" parent="PlanetaryCalculations">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436078" name="calculatePlanetPosition" parent="PlanetaryCalculations" startPc="268436007">
+            <param id="centerX"/>
+            <param id="centerY"/>
+            <param id="radius"/>
+            <param id="angle"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268436275" name="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourIndicator&gt;" parent="PlanetariumWatchView" startPc="268436079">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268436451" name="&lt;globals/PlanetariumWatchView/&lt;&gt;drawStar&gt;" parent="PlanetariumWatchView" startPc="268436276">
+            <param id="dc"/>
+            <param id="centerX"/>
+            <param id="centerY"/>
+            <param id="size"/>
+            <param id="color"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436645" name="drawNebulaSleepMode" parent="PlanetariumWatchView" startPc="268436452">
+            <param id="dc"/>
+            <param id="hours"/>
+            <param id="minutes"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268436960" name="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSystemInfo&gt;" parent="PlanetariumWatchView" startPc="268436646">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268437453" name="&lt;globals/PlanetariumWatchView/&lt;&gt;drawPlanets&gt;" parent="PlanetariumWatchView" startPc="268436961">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="PlanetariumWatchView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268437748" name="&lt;globals/PlanetariumWatchView/&lt;&gt;drawSaturnRings&gt;" parent="PlanetariumWatchView" startPc="268437454">
+            <param id="dc"/>
+            <param id="planetX"/>
+            <param id="planetY"/>
+            <param id="planetSize"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268438092" name="&lt;globals/PlanetariumWatchView/&lt;&gt;drawShootingStar&gt;" parent="PlanetariumWatchView" startPc="268437749">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268438299" name="&lt;globals/PlanetariumWatchView/&lt;&gt;drawJupiterSpot&gt;" parent="PlanetariumWatchView" startPc="268438093">
+            <param id="dc"/>
+            <param id="planetX"/>
+            <param id="planetY"/>
+            <param id="planetSize"/>
+            <param id="planetAngle"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438310" name="onExitSleep" parent="PlanetariumWatchView" startPc="268438300">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268438416" name="&lt;globals/PlanetariumWatchView/&lt;&gt;drawConcentricBackground&gt;" parent="PlanetariumWatchView" startPc="268438311">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438456" name="drawMinimalisteSleepModeTime" parent="PlanetariumWatchView" startPc="268438417">
+            <param id="dc"/>
+            <param id="text"/>
+            <param id="x"/>
+            <param id="y"/>
+            <param id="font"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438467" name="onShow" parent="PlanetariumWatchView" startPc="268438457">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268438546" name="&lt;globals/PlanetariumWatchView/&lt;&gt;drawNotificationStar&gt;" parent="PlanetariumWatchView" startPc="268438468">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438637" name="onLayout" parent="PlanetariumWatchView" startPc="268438547">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438788" name="drawFloatingParticles" parent="PlanetariumWatchView" startPc="268438638">
+            <param id="dc"/>
+            <param id="count"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268438952" name="&lt;globals/PlanetariumWatchView/&lt;&gt;drawArc&gt;" parent="PlanetariumWatchView" startPc="268438789">
+            <param id="dc"/>
+            <param id="centerX"/>
+            <param id="centerY"/>
+            <param id="radius"/>
+            <param id="startAngle"/>
+            <param id="endAngle"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438955" name="onPartialUpdate" parent="PlanetariumWatchView" startPc="268438953">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439233" name="drawNebulaEffect" parent="PlanetariumWatchView" startPc="268438956">
+            <param id="dc"/>
+            <param id="centerX"/>
+            <param id="centerY"/>
+            <param id="seed"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439244" name="onEnterSleep" parent="PlanetariumWatchView" startPc="268439234">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268439807" name="&lt;globals/PlanetariumWatchView/&lt;&gt;drawHourMarkers&gt;" parent="PlanetariumWatchView" startPc="268439245">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268439989" name="&lt;globals/PlanetariumWatchView/&lt;&gt;drawStarField&gt;" parent="PlanetariumWatchView" startPc="268439808">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440004" name="initialize" parent="PlanetariumWatchView" startPc="268439990">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440186" name="onUpdate" parent="PlanetariumWatchView" startPc="268440005">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440311" name="WatchFace" parent="Layouts" startPc="268440187">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>
