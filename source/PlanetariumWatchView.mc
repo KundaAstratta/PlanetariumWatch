@@ -327,30 +327,32 @@ class PlanetariumWatchView extends WatchUi.WatchFace {
 
     // Nouvelle fonction pour dessiner la Grande Tache Rouge de Jupiter
     private function drawJupiterSpot(dc as Dc, planetX as Number, planetY as Number, planetSize as Number, planetAngle as Float) as Void {
-        // Position fixe de la tache par rapport à Jupiter (par exemple à 45° de sa "face")
-        var spotAngle = planetAngle + Math.PI / 4; // 45° par rapport à la direction orbitale
-        var spotDistance = planetSize * 0.6; // Distance du centre de Jupiter
-        
-        // Calculer la position de la tache
-        var spotX = planetX + spotDistance * Math.cos(spotAngle);
-        var spotY = planetY + spotDistance * Math.sin(spotAngle);
-        
-        // Dessiner la Grande Tache Rouge (petite ellipse rouge)
-        dc.setColor(0xFF4500, Graphics.COLOR_TRANSPARENT); // Rouge-orange
-        dc.fillCircle(spotX, spotY, planetSize / 4); // Taille proportionnelle à Jupiter
-        
-        // Optionnel : ajouter quelques bandes nuageuses
-        dc.setColor(0xDDDDDD, Graphics.COLOR_TRANSPARENT); // Gris clair
-        dc.setPenWidth(1);
-        
-        // Bande équatoriale
+        // --- 1. Dessin des bandes nuageuses (maintenant toujours horizontales) ---
+        dc.setColor(0xDDDDDD, Graphics.COLOR_TRANSPARENT);
+        dc.setPenWidth(2);
+
+        // Position verticale des bandes
         var bandY1 = planetY - planetSize * 0.3;
         var bandY2 = planetY + planetSize * 0.3;
-        
-        dc.drawLine(planetX - planetSize, bandY1, planetX + planetSize, bandY1);
-        dc.drawLine(planetX - planetSize, bandY2, planetX + planetSize, bandY2);
-    }
 
+        // Largeur des bandes pour qu'elles ne dépassent pas du cercle
+        var bandWidth = planetSize * 0.80;
+
+        // Dessiner les deux lignes horizontales
+        dc.drawLine(planetX - bandWidth, bandY1, planetX + bandWidth, bandY1);
+        dc.drawLine(planetX - bandWidth, bandY2, planetX + bandWidth, bandY2);
+
+
+        // --- 2. Dessin de la Grande Tache Rouge (nouvelle position fixe) ---
+        // Position X: centrée sur la planète.
+        // Position Y: dans l'hémisphère sud, juste sous la bande inférieure.
+        var spotX = planetX;
+        var spotY = planetY + (planetSize * 0.6);
+
+        // Dessiner la tache
+        dc.setColor(0xFF4500, Graphics.COLOR_TRANSPARENT);
+        dc.fillCircle(spotX.toNumber(), spotY.toNumber(), planetSize / 4);
+    }
 
     private function drawShootingStar(dc as Dc) as Void {
         var clockTime = System.getClockTime();
