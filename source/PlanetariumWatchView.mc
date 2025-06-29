@@ -40,6 +40,7 @@ class PlanetariumWatchView extends WatchUi.WatchFace {
             drawConcentricBackground(dc);
             drawStarField(dc);
             drawHourMarkers(dc);
+            drawCurvedMonth(dc); 
             drawPlanets(dc);
             drawHourIndicator(dc); 
             drawNotificationStar(dc);
@@ -58,6 +59,7 @@ class PlanetariumWatchView extends WatchUi.WatchFace {
 
     private function drawConcentricBackground(dc as Dc) as Void {
         // Couleurs du dégradé du plus foncé au plus clair
+        /*
         var colors = [
             0x000811,  // Bleu nuit très très foncé (centre)
             0x001122,  // Bleu nuit très foncé
@@ -65,7 +67,19 @@ class PlanetariumWatchView extends WatchUi.WatchFace {
             0x002244,  // Bleu nuit moyen
             0x003355   // Bleu nuit plus clair (extérieur)
         ];
-        
+        */
+        var colors = [
+            0x000510, // Centre: Bleu très très sombre
+            0x000A18,
+            0x001020,
+            0x001528,
+            0x001A30,
+            0x002038,
+            0x002540,
+            0x003048,
+            0x003550,
+            0x004060  // Extérieur: Bleu nuit plus clair
+        ];
         var maxRadius = _radius + 20;
         var numRings = colors.size();
         
@@ -153,6 +167,45 @@ class PlanetariumWatchView extends WatchUi.WatchFace {
         dc.drawText(_centerX, _centerY + _radiusMarkers * 0.78, Graphics.FONT_XTINY, "12", Graphics.TEXT_JUSTIFY_CENTER);
         dc.drawText(_centerX - _radiusMarkers * 0.82, _centerY - _radiusMarkers * 0.08, Graphics.FONT_XTINY, "18", Graphics.TEXT_JUSTIFY_CENTER);
         dc.drawText(_centerX + _radiusMarkers * 0.82, _centerY - _radiusMarkers * 0.08, Graphics.FONT_XTINY, "6", Graphics.TEXT_JUSTIFY_CENTER);
+    }
+
+    // NOUVELLE FONCTION pour dessiner le mois en suivant une courbe
+    private function drawCurvedMonth(dc as Dc) as Void {
+        // Récupérer le nom du mois en toutes lettres et en majuscules
+        var today = Gregorian.info(Time.now(), Time.FORMAT_LONG);
+        var monthString = today.month.toUpper();
+
+        // Définir les paramètres pour le texte courbe
+        var font = Graphics.FONT_XTINY;
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+
+        // Le rayon où le texte sera dessiné (légèrement à l'intérieur des marqueurs d'heure)
+        var textRadius = _radiusMarkers - 28;
+
+        // L'angle de séparation entre chaque lettre (à ajuster pour un espacement idéal)
+        var anglePerChar = 0.12; // en radians
+
+        // Calculer l'angle total nécessaire pour tout le mot
+        var totalAngle = monthString.length() * anglePerChar;
+
+        // Définir l'angle de départ pour que le mot soit centré autour de la position 2h
+        // Angle pour 2h = (2/24) * 2*PI, et on décale de -PI/2 car 0h est en haut
+        var centerAngle = (2.0 / 24.0) * Math.PI * 2 - Math.PI / 2;
+        var startAngle = centerAngle - (totalAngle / 2.0);
+
+        // Boucler sur chaque lettre du mois pour la dessiner
+        for (var i = 0; i < monthString.length(); i++) {
+            var charAngle = startAngle + (i * anglePerChar);
+            var char = monthString.substring(i, i + 1);
+
+            // Calculer les coordonnées X et Y pour la lettre sur l'arc de cercle
+            var x = _centerX + textRadius * Math.cos(charAngle);
+            var y = _centerY + textRadius * Math.sin(charAngle);
+
+            // Dessiner la lettre. La justification centrée (verticalement et horizontalement)
+            // est importante pour un bon alignement.
+            dc.drawText(x, y, font, char, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        }
     }
 
     private function drawPlanets(dc as Dc) as Void {
@@ -375,68 +428,55 @@ class PlanetariumWatchView extends WatchUi.WatchFace {
             drawStar(dc, _centerX, _centerY - _radius + 30, 12, 0xFF6B6B);
         }
     }
-/*
+
+    // NOUVELLE FONCTION pour dessiner la date et l'icône de batterie en courbe
     private function drawSystemInfo(dc as Dc) as Void {
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        // Date   
+        // --- 1. Dessin de la date en courbe avec espacement ---
         var today = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);  
-        var dateX = _centerX + _radiusMarkers * 0.65;
-        var dateY = _centerY + _radiusMarkers * 0.50;
-        dc.drawText(dateX, dateY, Graphics.FONT_TINY, today.day.format("%02d"), Graphics.TEXT_JUSTIFY_CENTER);    
+        var dayString = today.day.format("%02d");
 
-        // Vérification du niveau de batterie
-        var stats = System.getSystemStats();
-        var batteryLevel = stats.battery;
-        
-        // Si la batterie est en dessous de 20%, dessiner une étoile rouge à côté de la date
-        if (batteryLevel < 20) {
-            // Position de l'étoile : à droite de la date avec un petit décalage
-            var starX = dateX + 25; // Décalage de 25 pixels à droite
-            var starY = dateY + 10;  // Légèrement en dessous pour l'alignement
-            
-            // Dessiner l'étoile rouge (même style que l'étoile de notification)
-            drawStar(dc, starX, starY, 12, Graphics.COLOR_RED);
-        }
-    }
- */
- private function drawSystemInfo(dc as Dc) as Void {
+        var font = Graphics.FONT_XTINY;
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        
-        // Date   
-        var today = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
-        var clockTime = System.getClockTime();
-        var currentHour = clockTime.hour;
-        
-        var dateX, dateY;
-        
-        // Si l'heure est entre 8h et 11h, positionner au niveau du trait de 21h
-        if (currentHour >= 8 && currentHour < 11) {
-            // Angle pour 21h : 21/24 * 2π - π/2 (pour commencer à 0h en haut)
-            var angle21h = (21.0 / 24.0) * Math.PI * 2 - Math.PI / 2;
-            var radius21h = _radiusMarkers * 0.95;// - 31; // Un peu plus proche du centre que les traits
-            dateX = _centerX + radius21h * Math.cos(angle21h);
-            dateY = _centerY + radius21h * Math.sin(angle21h);
-        } else {
-            // Position originale
-            dateX = _centerX + _radiusMarkers * 0.65;
-            dateY = _centerY + _radiusMarkers * 0.50;
-        }
-        
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);  
-        dc.drawText(dateX, dateY, Graphics.FONT_TINY, today.day.format("%02d"), Graphics.TEXT_JUSTIFY_CENTER);    
 
-        // Vérification du niveau de batterie
-        var stats = System.getSystemStats();
-        var batteryLevel = stats.battery;
+        var textRadius = _radiusMarkers - 28;
         
-        // Si la batterie est en dessous de 20%, dessiner une étoile rouge à côté de la date
-        if (batteryLevel < 20) {
-            // Position de l'étoile : à droite de la date avec un petit décalage
-            var starX = dateX + 25; // Décalage de 25 pixels à droite
-            var starY = dateY + 10;  // Légèrement en dessous pour l'alignement
+        // Espacement de base entre les centres des caractères
+        var baseSpacing = 0.12; 
+        // NOUVEAU : Espace supplémentaire à ajouter
+        var extraSpaceAngle = 0.02; // Ajustez cette valeur pour plus/moins d'espace
+
+        // L'angle de la position centrale (4h30) reste notre référence
+        var centerAngle = (3.5 / 24.0) * Math.PI * 2 - Math.PI / 2;
+        
+        // L'écart total entre les centres des deux chiffres sera la somme des espacements
+        var totalSpacing = baseSpacing + extraSpaceAngle;
+
+        // Calculer l'angle pour chaque chiffre en se basant sur le centre
+        var tensAngle = centerAngle - (totalSpacing / 2.0);
+        var unitsAngle = centerAngle + (totalSpacing / 2.0);
+
+        // Dessiner le premier chiffre (dizaines)
+        var tensChar = dayString.substring(0, 1);
+        var x1 = _centerX + textRadius * Math.cos(tensAngle);
+        var y1 = _centerY + textRadius * Math.sin(tensAngle);
+        dc.drawText(x1, y1, font, tensChar, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        
+        // Dessiner le second chiffre (unités)
+        var unitsChar = dayString.substring(1, 2);
+        var x2 = _centerX + textRadius * Math.cos(unitsAngle);
+        var y2 = _centerY + textRadius * Math.sin(unitsAngle);
+        dc.drawText(x2, y2, font, unitsChar, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+
+
+        // --- 2. Vérification et dessin de l'icône de batterie ---
+        var stats = System.getSystemStats();
+        if (stats.battery < 20) {
+            // Positionner l'étoile juste après le chiffre des unités
+            var starAngle = unitsAngle + baseSpacing * 1.5;
             
-            // Dessiner l'étoile rouge (même style que l'étoile de notification)
+            var starX = _centerX + textRadius * Math.cos(starAngle);
+            var starY = _centerY + textRadius * Math.sin(starAngle);
+            
             drawStar(dc, starX, starY, 12, Graphics.COLOR_RED);
         }
     }
@@ -533,4 +573,5 @@ class PlanetariumWatchView extends WatchUi.WatchFace {
     function onPartialUpdate(dc as Dc) as Void {
         // Mise à jour partielle pour économiser la batterie
     }
+
 }
