@@ -168,7 +168,7 @@ class PlanetariumWatchView extends WatchUi.WatchFace {
         dc.drawText(_centerX - _radiusMarkers * 0.82, _centerY - _radiusMarkers * 0.08, Graphics.FONT_XTINY, "18", Graphics.TEXT_JUSTIFY_CENTER);
         dc.drawText(_centerX + _radiusMarkers * 0.82, _centerY - _radiusMarkers * 0.08, Graphics.FONT_XTINY, "6", Graphics.TEXT_JUSTIFY_CENTER);
     }
-
+/*
     // NOUVELLE FONCTION pour dessiner le mois en suivant une courbe
     private function drawCurvedMonth(dc as Dc) as Void {
         // Récupérer le nom du mois en toutes lettres et en majuscules
@@ -204,6 +204,40 @@ class PlanetariumWatchView extends WatchUi.WatchFace {
 
             // Dessiner la lettre. La justification centrée (verticalement et horizontalement)
             // est importante pour un bon alignement.
+            dc.drawText(x, y, font, char, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        }
+    }
+*/
+    // NOUVELLE FONCTION pour dessiner le mois en suivant une courbe
+    private function drawCurvedMonth(dc as Dc) as Void {
+        // NOUVEAU : Tableau des noms des mois en anglais
+        var monthNames = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+
+        // On récupère les informations de date avec le mois en tant que NUMÉRO (1-12)
+        var today = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
+        var monthNumber = today.month;
+
+        // On sélectionne le nom du mois en anglais dans notre tableau
+        // (on soustrait 1 car les tableaux commencent à l'index 0)
+        var monthString = monthNames[monthNumber - 1];
+
+        // Le reste de la fonction est inchangé et dessinera le mot anglais
+        var font = Graphics.FONT_XTINY;
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+
+        var textRadius = _radiusMarkers - 28;
+        var anglePerChar = 0.12; 
+        var totalAngle = monthString.length() * anglePerChar;
+        var centerAngle = (2.0 / 24.0) * Math.PI * 2 - Math.PI / 2;
+        var startAngle = centerAngle - (totalAngle / 2.0);
+
+        for (var i = 0; i < monthString.length(); i++) {
+            var charAngle = startAngle + (i * anglePerChar);
+            var char = monthString.substring(i, i + 1);
+
+            var x = _centerX + textRadius * Math.cos(charAngle);
+            var y = _centerY + textRadius * Math.sin(charAngle);
+
             dc.drawText(x, y, font, char, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
         }
     }
