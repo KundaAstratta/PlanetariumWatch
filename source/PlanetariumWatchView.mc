@@ -168,46 +168,7 @@ class PlanetariumWatchView extends WatchUi.WatchFace {
         dc.drawText(_centerX - _radiusMarkers * 0.82, _centerY - _radiusMarkers * 0.08, Graphics.FONT_XTINY, "18", Graphics.TEXT_JUSTIFY_CENTER);
         dc.drawText(_centerX + _radiusMarkers * 0.82, _centerY - _radiusMarkers * 0.08, Graphics.FONT_XTINY, "6", Graphics.TEXT_JUSTIFY_CENTER);
     }
-/*
-    // NOUVELLE FONCTION pour dessiner le mois en suivant une courbe
-    private function drawCurvedMonth(dc as Dc) as Void {
-        // Récupérer le nom du mois en toutes lettres et en majuscules
-        var today = Gregorian.info(Time.now(), Time.FORMAT_LONG);
-        var monthString = today.month.toUpper();
 
-        // Définir les paramètres pour le texte courbe
-        var font = Graphics.FONT_XTINY;
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-
-        // Le rayon où le texte sera dessiné (légèrement à l'intérieur des marqueurs d'heure)
-        var textRadius = _radiusMarkers - 28;
-
-        // L'angle de séparation entre chaque lettre (à ajuster pour un espacement idéal)
-        var anglePerChar = 0.12; // en radians
-
-        // Calculer l'angle total nécessaire pour tout le mot
-        var totalAngle = monthString.length() * anglePerChar;
-
-        // Définir l'angle de départ pour que le mot soit centré autour de la position 2h
-        // Angle pour 2h = (2/24) * 2*PI, et on décale de -PI/2 car 0h est en haut
-        var centerAngle = (2.0 / 24.0) * Math.PI * 2 - Math.PI / 2;
-        var startAngle = centerAngle - (totalAngle / 2.0);
-
-        // Boucler sur chaque lettre du mois pour la dessiner
-        for (var i = 0; i < monthString.length(); i++) {
-            var charAngle = startAngle + (i * anglePerChar);
-            var char = monthString.substring(i, i + 1);
-
-            // Calculer les coordonnées X et Y pour la lettre sur l'arc de cercle
-            var x = _centerX + textRadius * Math.cos(charAngle);
-            var y = _centerY + textRadius * Math.sin(charAngle);
-
-            // Dessiner la lettre. La justification centrée (verticalement et horizontalement)
-            // est importante pour un bon alignement.
-            dc.drawText(x, y, font, char, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-        }
-    }
-*/
     // NOUVELLE FONCTION pour dessiner le mois en suivant une courbe
     private function drawCurvedMonth(dc as Dc) as Void {
         // NOUVEAU : Tableau des noms des mois en anglais
@@ -297,7 +258,7 @@ class PlanetariumWatchView extends WatchUi.WatchFace {
         dc.setPenWidth(2);
         
         // Calculer la longueur du trait des anneaux (proportionnelle à la taille de la planète)
-        var ringLength = planetSize * 2.5;
+        var ringLength = planetSize * 3.2;
         var ringOffset = ringLength / 2;
         
         // Angle d'inclinaison des anneaux (peut être ajusté pour l'effet visuel)
@@ -325,35 +286,36 @@ class PlanetariumWatchView extends WatchUi.WatchFace {
         dc.drawLine(outerStartX, outerStartY, outerEndX, outerEndY);
     }
 
-    // Nouvelle fonction pour dessiner la Grande Tache Rouge de Jupiter
+    // VERSION MISE À JOUR : Tache Rouge en forme d'ellipse
     private function drawJupiterSpot(dc as Dc, planetX as Number, planetY as Number, planetSize as Number, planetAngle as Float) as Void {
-        // --- 1. Dessin des bandes nuageuses (maintenant toujours horizontales) ---
+        // --- 1. Dessin des bandes nuageuses (inchangé) ---
         dc.setColor(0xDDDDDD, Graphics.COLOR_TRANSPARENT);
         dc.setPenWidth(2);
-
-        // Position verticale des bandes
         var bandY1 = planetY - planetSize * 0.3;
         var bandY2 = planetY + planetSize * 0.3;
-
-        // Largeur des bandes pour qu'elles ne dépassent pas du cercle
         var bandWidth = planetSize * 0.80;
-
-        // Dessiner les deux lignes horizontales
         dc.drawLine(planetX - bandWidth, bandY1, planetX + bandWidth, bandY1);
         dc.drawLine(planetX - bandWidth, bandY2, planetX + bandWidth, bandY2);
 
+        // --- 2. Dessin de la Grande Tache Rouge en tant qu'ellipse ---
+        
+        // Définir les dimensions de l'ellipse (plus large que haute)
+        var ellipseWidth = planetSize * 0.5;
+        var ellipseHeight = planetSize * 0.2;
 
-        // --- 2. Dessin de la Grande Tache Rouge (nouvelle position fixe) ---
-        // Position X: centrée sur la planète.
-        // Position Y: dans l'hémisphère sud, juste sous la bande inférieure.
-        var spotX = planetX;
-        var spotY = planetY + (planetSize * 0.6);
+        // Le centre de l'ellipse reste au même endroit (position fixe)
+        var spotCenterX = planetX;
+        var spotCenterY = planetY + (planetSize * 0.6);
 
-        // Dessiner la tache
+        // Calculer le coin supérieur gauche requis par fillEllipse()
+        var topLeftX = spotCenterX - (ellipseWidth / 2);
+        var topLeftY = spotCenterY - (ellipseHeight / 2);
+        
+        // Dessiner l'ellipse
         dc.setColor(0xFF4500, Graphics.COLOR_TRANSPARENT);
-        dc.fillCircle(spotX.toNumber(), spotY.toNumber(), planetSize / 4);
+        dc.fillEllipse(topLeftX.toNumber(), topLeftY.toNumber(), ellipseWidth.toNumber(), ellipseHeight.toNumber());
     }
-
+    
     private function drawShootingStar(dc as Dc) as Void {
         var clockTime = System.getClockTime();
         
@@ -461,7 +423,7 @@ class PlanetariumWatchView extends WatchUi.WatchFace {
         
         if (_hasNotifications) {
             // Étoile de notification en haut
-            drawStar(dc, _centerX, _centerY - _radius + 30, 12, 0xFF6B6B);
+            drawStar(dc, _centerX, _centerY - _radius + 40, 12, 0xFF6B6B);
         }
     }
 
