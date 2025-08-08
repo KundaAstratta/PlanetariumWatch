@@ -32,9 +32,9 @@ class PlanetariumWatchView extends WatchUi.WatchFace {
         dc.setColor(0x001133, 0x001133);
         dc.clear();
 
-        // Test sleep mode
+        // TEST sleep mode
         //_isInSleepMode = true;
-        // Test sleep mode
+        // TEST sleep mode
 
         if (!_isInSleepMode) {
             drawConcentricBackground(dc);
@@ -43,7 +43,9 @@ class PlanetariumWatchView extends WatchUi.WatchFace {
             drawCurvedMonth(dc); 
             drawPlanets(dc);
             drawHourIndicator(dc); 
-            drawNotificationStar(dc);
+            //drawNotificationStar(dc);
+            drawMoonPhase(dc); // Nouvelle fonction pour la lune
+            //drawNotificationTime(dc); // Nouvelle fonction pour l'heure des notifications
             // Informations système (optionnel)
             drawSystemInfo(dc);
             drawShootingStar(dc);
@@ -56,18 +58,8 @@ class PlanetariumWatchView extends WatchUi.WatchFace {
         }
     }
 
-
     private function drawConcentricBackground(dc as Dc) as Void {
         // Couleurs du dégradé du plus foncé au plus clair
-        /*
-        var colors = [
-            0x000811,  // Bleu nuit très très foncé (centre)
-            0x001122,  // Bleu nuit très foncé
-            0x001833,  // Bleu nuit foncé
-            0x002244,  // Bleu nuit moyen
-            0x003355   // Bleu nuit plus clair (extérieur)
-        ];
-        */
         var colors = [
             0x000510, // Centre: Bleu très très sombre
             0x000A18,
@@ -417,6 +409,7 @@ class PlanetariumWatchView extends WatchUi.WatchFace {
         dc.fillPolygon(points);
     }
 
+/*
     private function drawNotificationStar(dc as Dc) as Void {
         var settings = System.getDeviceSettings();
         _hasNotifications = settings.notificationCount > 0;
@@ -424,8 +417,156 @@ class PlanetariumWatchView extends WatchUi.WatchFace {
         if (_hasNotifications) {
             // Étoile de notification en haut
             drawStar(dc, _centerX, _centerY - _radius + 40, 12, 0xFF6B6B);
+
+            // NOUVEAU : Afficher l'heure HH:MM à gauche de manière courbée
+            var clockTime = System.getClockTime();
+            var hours = clockTime.hour.format("%02d");
+            var minutes = clockTime.min.format("%02d");
+            var timeString = Lang.format("$1$:$2$", [hours, minutes]);
+
+            var font = Graphics.FONT_XTINY;
+            dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+
+            var textRadius = _radiusMarkers - 28; // Même rayon que la date
+            var anglePerChar = 0.12; // Ajustez si nécessaire pour l'espacement entre les caractères
+            var totalAngle = timeString.length() * anglePerChar;
+
+            // Angle central pour la position de l'heure (symétrique à la date en haut à gauche)
+            var centerAngle = (22.0 / 24.0) * Math.PI * 2 - Math.PI / 2; 
+            var startAngle = centerAngle - (totalAngle / 2.0);
+
+            for (var i = 0; i < timeString.length(); i++) {
+                var charAngle = startAngle + (i * anglePerChar);
+                var char = timeString.substring(i, i + 1);
+
+                var x = _centerX + textRadius * Math.cos(charAngle);
+                var y = _centerY + textRadius * Math.sin(charAngle);
+
+                dc.drawText(x, y, font, char, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+            }
         }
     }
+*/
+     // NOUVELLE FONCTION : pour dessiner la phase de la Lune  
+     private function drawMoonPhase(dc as Dc) as Void {
+        var settings = System.getDeviceSettings();
+        _hasNotifications = settings.notificationCount > 0;
+        
+        if (_hasNotifications) {
+            // Position de la lune
+            var moonX = _centerX; 
+            var moonY = _centerY - _radiusMarkers * 0.92 + 47; // Positionner plus bas
+            var moonRadius = 15; 
+
+            //TEST
+            // NOUVEAU: Calcul de la position de la lune au niveau du marqueur 20h
+            moonRadius = 15;
+            // Angle pour 20h sur un cadran 24h
+            var angle20h = (19.5 / 24.0) * Math.PI * 2 - Math.PI / 2;
+            
+            // Le centre de la lune est positionné légèrement à l'intérieur du rayon des marqueurs
+            // pour qu'elle soit "sur" le cadran et non en dehors.
+            var moonRadiusPosition = _radiusMarkers - moonRadius - 15; 
+            
+            moonX = _centerX + moonRadiusPosition * Math.cos(angle20h);
+            moonY = _centerY + moonRadiusPosition * Math.sin(angle20h);
+            //TEST
+   
+            // Calcul de la phase de la Lune (formule plus fiable)
+            var today = Time.now();
+            var dateInfo = Gregorian.info(today, Time.FORMAT_SHORT);
+            
+            // Calcul du jour julien
+            var year = dateInfo.year;
+            var month = dateInfo.month;
+            var day = dateInfo.day;
+            
+            var ye = year;
+            var m = month;
+            if (month <= 2) {
+                ye = ye - 1;
+                m = m + 12;
+            }
+            var a = Math.floor(ye / 100);
+            var b = 2 - a + Math.floor(a / 4);
+            var julianDay = Math.floor(365.25 * (ye + 4716)) + Math.floor(30.6001 * (m + 1)) + day + b - 1524.5;
+            
+            // Phase de la lune (0 = Nouvelle Lune, 1 = Pleine Lune)
+            var lunarDaysSinceNewMoon = (julianDay - 2451550.1).toFloat(); // Jour julien de la Nouvelle Lune de janvier 2000
+            var phase = lunarDaysSinceNewMoon / 29.530588853;
+            phase = phase - Math.floor(phase);
+
+
+            // Dessiner l'ombre de la lune
+            var shadowColor = 0x001133;
+            
+            // Dessiner un cercle blanc pour la lune
+            dc.setColor(shadowColor, Graphics.COLOR_TRANSPARENT);
+            dc.fillCircle(moonX, moonY, moonRadius);
+            
+           
+            // Calculer le décalage de l'ombre pour un effet de croissant
+            var shadowOffset = Math.cos(phase * Math.PI * 2);
+            
+            // L'ombre est plus foncée au milieu du cycle (croissant/décroissant)
+            dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+            
+            // Dessiner la partie ombragée
+            for (var y = -moonRadius; y <= moonRadius; y++) {
+                var x = Math.sqrt(moonRadius * moonRadius - y * y);
+                var xOffset = x * shadowOffset;
+                
+                // Si la phase est croissante
+                if (phase <= 0.5) {
+                    dc.drawLine(moonX + xOffset.toNumber(), moonY + y, moonX + x.toNumber(), moonY + y);
+                } 
+                // Si la phase est décroissante
+                else {
+                    dc.drawLine(moonX - x.toNumber(), moonY + y, moonX - xOffset.toNumber(), moonY + y);
+                }
+            }
+            dc.setColor(0xFF8C00, Graphics.COLOR_TRANSPARENT); // Orange
+            dc.setPenWidth(2);
+            dc.drawCircle(moonX, moonY, moonRadius);
+        }
+    }
+
+    // NOUVELLE FONCTION: pour afficher l'heure des notifications
+    /*
+    private function drawNotificationTime(dc as Dc) as Void {
+        var settings = System.getDeviceSettings();
+        _hasNotifications = settings.notificationCount > 0;
+        
+        if (_hasNotifications) {
+            // Afficher l'heure HH:MM à gauche de manière courbée
+            var clockTime = System.getClockTime();
+            var hours = clockTime.hour.format("%02d");
+            var minutes = clockTime.min.format("%02d");
+            var timeString = Lang.format("$1$:$2$", [hours, minutes]);
+
+            var font = Graphics.FONT_XTINY;
+            dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+
+            var textRadius = _radiusMarkers - 28; // Même rayon que la date
+            var anglePerChar = 0.12; 
+            var totalAngle = timeString.length() * anglePerChar;
+            
+            // L'angle central pour la position de l'heure est ajusté pour être en haut à gauche
+            var centerAngle = (22.0 / 24.0) * Math.PI * 2 - Math.PI / 2; 
+            var startAngle = centerAngle - (totalAngle / 2.0);
+
+            for (var i = 0; i < timeString.length(); i++) {
+                var charAngle = startAngle + (i * anglePerChar);
+                var char = timeString.substring(i, i + 1);
+
+                var x = _centerX + textRadius * Math.cos(charAngle);
+                var y = _centerY + textRadius * Math.sin(charAngle);
+
+                dc.drawText(x, y, font, char, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+            }
+        }
+    }
+    */
 
     // NOUVELLE FONCTION pour dessiner la date et l'icône de batterie en courbe
     private function drawSystemInfo(dc as Dc) as Void {
