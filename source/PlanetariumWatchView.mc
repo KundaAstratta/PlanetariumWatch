@@ -587,7 +587,8 @@ class PlanetariumWatchView extends WatchUi.WatchFace {
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
         dc.clear();     
         // 1. Dessiner un arrière-plan d'étoiles discret
-        drawFloatingParticles(dc, 200);     
+       // drawFloatingParticles(dc, 200); 
+        drawStarField(dc);    
         
         // 2. Dessiner l'heure de manière sobre mais visible
         // Heures dans le quart haut
@@ -600,7 +601,7 @@ class PlanetariumWatchView extends WatchUi.WatchFace {
         drawMinimalisteSleepModeTime(dc, minutes.format("%02d"), minutesX, minutesY, Graphics.FONT_SYSTEM_LARGE);
 
     }
-
+/*
     function drawFloatingParticles(dc, count) {
         var localSeed = 12345; 
         for (var i = 0; i < count; i++) {
@@ -616,7 +617,7 @@ class PlanetariumWatchView extends WatchUi.WatchFace {
             dc.fillCircle(x, y, 1);
         }
     }
-        
+*/        
     function drawMinimalisteSleepModeTime(dc, text, x, y, font) {     
         // Texte en blanc pour une lisibilité maximale en mode veille
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
