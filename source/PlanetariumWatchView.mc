@@ -43,10 +43,7 @@ class PlanetariumWatchView extends WatchUi.WatchFace {
             drawCurvedMonth(dc); 
             drawPlanets(dc);
             drawHourIndicator(dc); 
-            //drawNotificationStar(dc);
             drawMoonPhase(dc); // Nouvelle fonction pour la lune
-            //drawNotificationTime(dc); // Nouvelle fonction pour l'heure des notifications
-            // Informations système (optionnel)
             drawSystemInfo(dc);
             drawShootingStar(dc);
         }
@@ -154,11 +151,28 @@ class PlanetariumWatchView extends WatchUi.WatchFace {
         }
         
         // Numéros des heures principales
+        // Lit le paramètre utilisateur pour déterminer les labels
+        var isInverted = Application.getApp().getProperty("invertDisplay");
+
+        var topLabel = "0";
+        var bottomLabel = "12";
+        var leftLabel = "18";
+        var rightLabel = "6";
+
+        if (isInverted) {
+            topLabel = "12";
+            bottomLabel = "0";
+            leftLabel = "6";
+            rightLabel = "18";
+        }
+
+        // Dessine les labels en fonction de la condition
         dc.setColor(0xFFD700, Graphics.COLOR_TRANSPARENT);  
-        dc.drawText(_centerX, _centerY - _radiusMarkers * 0.92, Graphics.FONT_XTINY, "0", Graphics.TEXT_JUSTIFY_CENTER);
-        dc.drawText(_centerX, _centerY + _radiusMarkers * 0.78, Graphics.FONT_XTINY, "12", Graphics.TEXT_JUSTIFY_CENTER);
-        dc.drawText(_centerX - _radiusMarkers * 0.82, _centerY - _radiusMarkers * 0.08, Graphics.FONT_XTINY, "18", Graphics.TEXT_JUSTIFY_CENTER);
-        dc.drawText(_centerX + _radiusMarkers * 0.82, _centerY - _radiusMarkers * 0.08, Graphics.FONT_XTINY, "6", Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(_centerX, _centerY - _radiusMarkers * 0.92, Graphics.FONT_XTINY, topLabel, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(_centerX, _centerY + _radiusMarkers * 0.78, Graphics.FONT_XTINY, bottomLabel, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(_centerX - _radiusMarkers * 0.82, _centerY - _radiusMarkers * 0.08, Graphics.FONT_XTINY, leftLabel, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(_centerX + _radiusMarkers * 0.82, _centerY - _radiusMarkers * 0.08, Graphics.FONT_XTINY, rightLabel, Graphics.TEXT_JUSTIFY_CENTER);
+
     }
 
     // NOUVELLE FONCTION pour dessiner le mois en suivant une courbe
@@ -311,11 +325,24 @@ class PlanetariumWatchView extends WatchUi.WatchFace {
     private function drawShootingStar(dc as Dc) as Void {
         var clockTime = System.getClockTime();
         
-        // Calcul de la position sur 24h (et non 12h)
+        // Calcul de la position 
         // L'angle commence à 0h en haut (12h position) et tourne dans le sens horaire
-        var totalMinutes = clockTime.hour * 60 + clockTime.min + clockTime.sec / 60.0;
-        var angle24h = (totalMinutes / (24 * 60)) * Math.PI * 2 - Math.PI / 2;
         
+        var isInverted = Application.getApp().getProperty("invertDisplay");
+        var currentHour = clockTime.hour;
+
+        if (isInverted) {
+            // Ajoute 12 heures pour une rotation de 180 degrés
+            currentHour = (clockTime.hour + 12) % 24;
+        }
+        
+        // Utilise "currentHour" au lieu de "clockTime.hour"
+        var totalMinutes = currentHour * 60 + clockTime.min + clockTime.sec / 60.0;
+        // --- Fin de la modification ---
+
+        var angle24h = (totalMinutes / (24 * 60)) * Math.PI * 2 - Math.PI / 2;
+
+
         // Une seule étoile filante indiquant le temps sur 24h
         var starRadius = _radius * 0.88; // Position entre les orbites planétaires
         var starX = _centerX + starRadius * Math.cos(angle24h);
@@ -376,7 +403,18 @@ class PlanetariumWatchView extends WatchUi.WatchFace {
         var clockTime = System.getClockTime();
         
         // Calcul de la position exacte sur 24h avec les minutes
-        var totalMinutes = clockTime.hour * 60 + clockTime.min;
+        var isInverted = Application.getApp().getProperty("invertDisplay");
+        var currentHour = clockTime.hour;
+
+        if (isInverted) {
+            // Ajoute 12 heures pour une rotation de 180 degrés
+            currentHour = (clockTime.hour + 12) % 24;
+        }
+        
+        // Utilise "currentHour" au lieu de "clockTime.hour"
+        var totalMinutes = currentHour * 60 + clockTime.min;
+        // --- Fin de la modification ---
+
         var angle24h = (totalMinutes / (24 * 60.0)) * Math.PI * 2 - Math.PI / 2;
         
         // Position du point rouge au niveau des marques (même rayon que les marques dorées)
@@ -409,44 +447,6 @@ class PlanetariumWatchView extends WatchUi.WatchFace {
         dc.fillPolygon(points);
     }
 
-/*
-    private function drawNotificationStar(dc as Dc) as Void {
-        var settings = System.getDeviceSettings();
-        _hasNotifications = settings.notificationCount > 0;
-        
-        if (_hasNotifications) {
-            // Étoile de notification en haut
-            drawStar(dc, _centerX, _centerY - _radius + 40, 12, 0xFF6B6B);
-
-            // NOUVEAU : Afficher l'heure HH:MM à gauche de manière courbée
-            var clockTime = System.getClockTime();
-            var hours = clockTime.hour.format("%02d");
-            var minutes = clockTime.min.format("%02d");
-            var timeString = Lang.format("$1$:$2$", [hours, minutes]);
-
-            var font = Graphics.FONT_XTINY;
-            dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-
-            var textRadius = _radiusMarkers - 28; // Même rayon que la date
-            var anglePerChar = 0.12; // Ajustez si nécessaire pour l'espacement entre les caractères
-            var totalAngle = timeString.length() * anglePerChar;
-
-            // Angle central pour la position de l'heure (symétrique à la date en haut à gauche)
-            var centerAngle = (22.0 / 24.0) * Math.PI * 2 - Math.PI / 2; 
-            var startAngle = centerAngle - (totalAngle / 2.0);
-
-            for (var i = 0; i < timeString.length(); i++) {
-                var charAngle = startAngle + (i * anglePerChar);
-                var char = timeString.substring(i, i + 1);
-
-                var x = _centerX + textRadius * Math.cos(charAngle);
-                var y = _centerY + textRadius * Math.sin(charAngle);
-
-                dc.drawText(x, y, font, char, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-            }
-        }
-    }
-*/
      // NOUVELLE FONCTION : pour dessiner la phase de la Lune  
      private function drawMoonPhase(dc as Dc) as Void {
         var settings = System.getDeviceSettings();
@@ -531,43 +531,6 @@ class PlanetariumWatchView extends WatchUi.WatchFace {
         }
     }
 
-    // NOUVELLE FONCTION: pour afficher l'heure des notifications
-    /*
-    private function drawNotificationTime(dc as Dc) as Void {
-        var settings = System.getDeviceSettings();
-        _hasNotifications = settings.notificationCount > 0;
-        
-        if (_hasNotifications) {
-            // Afficher l'heure HH:MM à gauche de manière courbée
-            var clockTime = System.getClockTime();
-            var hours = clockTime.hour.format("%02d");
-            var minutes = clockTime.min.format("%02d");
-            var timeString = Lang.format("$1$:$2$", [hours, minutes]);
-
-            var font = Graphics.FONT_XTINY;
-            dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-
-            var textRadius = _radiusMarkers - 28; // Même rayon que la date
-            var anglePerChar = 0.12; 
-            var totalAngle = timeString.length() * anglePerChar;
-            
-            // L'angle central pour la position de l'heure est ajusté pour être en haut à gauche
-            var centerAngle = (22.0 / 24.0) * Math.PI * 2 - Math.PI / 2; 
-            var startAngle = centerAngle - (totalAngle / 2.0);
-
-            for (var i = 0; i < timeString.length(); i++) {
-                var charAngle = startAngle + (i * anglePerChar);
-                var char = timeString.substring(i, i + 1);
-
-                var x = _centerX + textRadius * Math.cos(charAngle);
-                var y = _centerY + textRadius * Math.sin(charAngle);
-
-                dc.drawText(x, y, font, char, Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-            }
-        }
-    }
-    */
-
     // NOUVELLE FONCTION pour dessiner la date et l'icône de batterie en courbe
     private function drawSystemInfo(dc as Dc) as Void {
         // --- 1. Dessin de la date en courbe avec espacement ---
@@ -624,10 +587,9 @@ class PlanetariumWatchView extends WatchUi.WatchFace {
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
         dc.clear();     
         // 1. Dessiner un arrière-plan d'étoiles discret
-        drawFloatingParticles(dc, 30);     
-        // 2. Dessiner une "suggestion" de nébuleuse avec des couleurs légèrement plus claires
-        drawNebulaEffect(dc, _centerX, _centerY, (hours * 60 + minutes));        
-        // 3. Dessiner l'heure de manière sobre mais visible
+        drawFloatingParticles(dc, 200);     
+        
+        // 2. Dessiner l'heure de manière sobre mais visible
         // Heures dans le quart haut
         var hoursY = _centerY - (dc.getHeight() * 0.25);
         drawMinimalisteSleepModeTime(dc, hours.format("%02d"), _centerX, hoursY, Graphics.FONT_SYSTEM_LARGE);
@@ -637,36 +599,6 @@ class PlanetariumWatchView extends WatchUi.WatchFace {
         var minutesY = _centerY - (dc.getHeight() * 0.05);
         drawMinimalisteSleepModeTime(dc, minutes.format("%02d"), minutesX, minutesY, Graphics.FONT_SYSTEM_LARGE);
 
-    }
-
-    function drawNebulaEffect(dc, centerX, centerY, seed) {
-        // Palette de gris un peu plus clairs
-        var colors = [0x222222, 0x333333, 0x2A2A2A]; 
-        var localSeed = seed;
-        // Augmentation du nombre de particules pour un effet plus dense
-        var particleCount = 25;
-
-        for (var i = 0; i < particleCount; i++) {
-            localSeed = (localSeed * 1664525 + 1013904223) & 0x7FFFFFFF;
-            
-            var angle = (localSeed.toFloat() / 0x7FFFFFFF) * 2 * Math.PI;
-            
-            localSeed = (localSeed * 1664525 + 1013904223) & 0x7FFFFFFF;
-            var radius = (localSeed % (dc.getWidth() / 4)).abs();
-            
-            var x = centerX + radius * Math.cos(angle);
-            var y = centerY + radius * Math.sin(angle);
-            
-            // Taille des bulles considérablement agrandie
-            localSeed = (localSeed * 1664525 + 1013904223) & 0x7FFFFFFF;
-            var size = (localSeed % 80) + 50; // Tailles entre 50 et 129 (au lieu de 25-69)
-            
-            localSeed = (localSeed * 1664525 + 1013904223) & 0x7FFFFFFF;
-            var color = colors[localSeed % colors.size()];
-
-            dc.setColor(color, Graphics.COLOR_TRANSPARENT);
-            dc.fillCircle(x.toNumber(), y.toNumber(), size);
-        }
     }
 
     function drawFloatingParticles(dc, count) {

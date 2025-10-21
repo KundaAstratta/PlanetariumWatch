@@ -1,0 +1,3 @@
+<properties>
+    <property id="invertDisplay" type="boolean">false</property>
+</properties>
