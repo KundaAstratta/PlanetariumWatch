@@ -625,21 +625,23 @@ class PlanetariumWatchView extends WatchUi.WatchFace {
     }
 
     function onHide() as Void {
-        _isInSleepMode = true;
+        //_isInSleepMode = true;
     }
 
     function onShow() as Void {
-        _isInSleepMode = false;
+        //_isInSleepMode = false;
     }
 
     // The user has just looked at their watch. Timers and animations may be started here.
     function onExitSleep() as Void {
         _isInSleepMode = false;
+        WatchUi.requestUpdate();
     }
 
     // Terminate any active timers and prepare for slow updates.
     function onEnterSleep() as Void {
         _isInSleepMode = true;
+        WatchUi.requestUpdate();
     }
 
     function onPartialUpdate(dc as Dc) as Void {
